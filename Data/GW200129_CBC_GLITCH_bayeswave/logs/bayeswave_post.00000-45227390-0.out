@@ -1,0 +1,41 @@
+bayeswave.run file not found in run directory, trying to see if it is in 1_main instead
+Creating a modelcollection posterior
+reading in run from output directory bayeswave.run file
+building data
+Reading data from "/var/lib/condor/execute/dir_1528488/cached_data_0/cached_data.json"
+
+building prior manager
+building modelCollectionPointer
+done building modelCollection
+loading in chain 0
+parameter injections are: {}
+making cornerplot with ['cosineInclination', 'ln_likelihood', 'ln_prior', 'logDistanceM', 'phaseRad', 'polarizationAngleRad', 'rightAscensionRad', 'sineDeclination']
+parameter injections are: {}
+making cornerplot with ['chi_effective', 'chi_precessing', 'firstInterferometerCoalescenceTimeSec', 'geocenterPhaseRad', 'ln_likelihood', 'ln_prior', 'mass_1', 'mass_2', 'mass_ratio', 'total_mass']
+TODO, plotting 1D along with N-D posteriors is a bit of a hack, the marginalized corner plots will be wrong. Looking at you ln_likelihood
+TODO, plotting 1D along with N-D posteriors is a bit of a hack, the marginalized corner plots will be wrong. Looking at you ln_prior
+TODO, plotting 1D along with N-D posteriors is a bit of a hack, the marginalized corner plots will be wrong. Looking at you glitch_H1_dimension
+parameter injections are: {}
+making cornerplot with ['approximateSNR', 'frequencyHz', 'glitch_H1_dimension', 'ln_likelihood', 'ln_prior', 'log_10_amplitude', 'phaseRad', 'qualityFactor', 'timeSec']
+TODO, plotting 1D along with N-D posteriors is a bit of a hack, the marginalized corner plots will be wrong. Looking at you ln_likelihood
+TODO, plotting 1D along with N-D posteriors is a bit of a hack, the marginalized corner plots will be wrong. Looking at you ln_prior
+TODO, plotting 1D along with N-D posteriors is a bit of a hack, the marginalized corner plots will be wrong. Looking at you glitch_L1_dimension
+parameter injections are: {}
+making cornerplot with ['approximateSNR', 'frequencyHz', 'glitch_L1_dimension', 'ln_likelihood', 'ln_prior', 'log_10_amplitude', 'phaseRad', 'qualityFactor', 'timeSec']
+Constructing template matrix for colored_frequency
+UnboundLocalError in QTransform, currently q_transform is not working with all 0 dataset
+Warning: qgram is None for model glitch, plot_type model, ifo H1
+UnboundLocalError in QTransform, currently q_transform is not working with all 0 dataset
+Warning: qgram is None for model glitch, plot_type model, ifo H1
+UnboundLocalError in QTransform, currently q_transform is not working with all 0 dataset
+Warning: qgram is None for model glitch, plot_type model, ifo H1
+UnboundLocalError in QTransform, currently q_transform is not working with all 0 dataset
+Warning: qgram is None for model glitch, plot_type model, ifo H1
+Computing evidence
+Number of temperatures:  20
+Temperature dataframe shape used for evidence: (15000, 60)
+logL chain dataframe shape used for evidence: (15001, 20)
+Evidence with SS:  417626.728  +-  0.121
+Evidence with TI (interpolation):  417626.366  +-  0.126
+Evidence with TI (trapezoid integration):  417625.321
+All done!

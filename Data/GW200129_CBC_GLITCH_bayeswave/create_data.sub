@@ -1,0 +1,23 @@
+universe = vanilla
+executable = /home/sophie.bini/BW/BW_CPP/bayeswave-cpp/build/src/create_data
+arguments = $(ifo) $(H1_cache) $(L1_cache) $(H1_channel) $(L1_channel) $(H1_psd) $(L1_psd) $(dont_dump_extras) $(psdlength) $(padding) $(H1_flow) $(L1_flow) $(trigtime) $(segment_start) $(srate) $(seglen) $(dataseed) $(L1_timeslide) $(overwrite) $(data_directory)
+request_memory = 500MB
+request_disk = 500MB
+stream_output = True
+stream_error = True
+when_to_transfer_output = ON_EXIT_OR_EVICT
+success_exit_code = 0
+getenv = True
+log = logs/$(nodename)-$(cluster)-$(process).log
+initialdir = /home/sophie.bini/BW/BW_CPP/glitch_residual/Marginalization_Comparison/Moderate/FRAME_INJ/GW200129_CBC_GLITCH_frame_3e6_v1
+notification = ERROR
+accounting_group = ligo.dev.o4.burst.paramest.bayeswave
+accounting_group_user = sophie.bini
+should_transfer_files = YES
+preserve_relative_paths = True
+transfer_output_files = $(output_data_directory)
+transfer_output_remaps = "$(output_data_directory_remap)"
+output = $(log_dir)/$(nodename)-$(cluster)-$(process).out
+error = $(log_dir)/$(nodename)-$(cluster)-$(process).err
+
+queue

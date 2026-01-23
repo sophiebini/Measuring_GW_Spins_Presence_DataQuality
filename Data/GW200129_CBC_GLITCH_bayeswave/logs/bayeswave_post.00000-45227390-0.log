@@ -1,0 +1,76 @@
+000 (45227390.000.000) 2025-09-19 12:31:00 Job submitted from host: <10.14.0.121:9618?addrs=10.14.0.121-9618&alias=ldas-pcdev12.ligo.caltech.edu&noUDP&sock=schedd_14950_08f5>
+    DAG Node: bayeswave_post.00000
+...
+040 (45227390.000.000) 2025-09-19 12:34:05 Started transferring input files
+	Transferring to host: <10.14.5.96:9618?addrs=10.14.5.96-9618&alias=node1096.cluster.ldas.cit&noUDP&sock=slot1_4_2717_1f48_8437>
+...
+040 (45227390.000.000) 2025-09-19 12:34:18 Finished transferring input files
+...
+001 (45227390.000.000) 2025-09-19 12:34:19 Job executing on host: <10.14.5.96:9618?addrs=10.14.5.96-9618&alias=node1096.cluster.ldas.cit&noUDP&sock=startd_2121_6876>
+	SlotName: slot1_4@node1096.cluster.ldas.cit
+	CondorScratchDir = "/var/lib/condor/execute/dir_2034359"
+	Cpus = 1
+	Disk = 1049600
+	GPUs = 0
+	Memory = 2048
+...
+006 (45227390.000.000) 2025-09-19 12:34:28 Image size of job updated: 20304
+	20  -  MemoryUsage of job (MB)
+	20304  -  ResidentSetSize of job (KB)
+...
+006 (45227390.000.000) 2025-09-19 12:38:54 Image size of job updated: 1457440
+	20  -  MemoryUsage of job (MB)
+	20304  -  ResidentSetSize of job (KB)
+...
+004 (45227390.000.000) 2025-09-19 12:38:54 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:01:59, Sys 0 00:00:08  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	92109173  -  Run Bytes Received By Job
+	(1) Normal termination (return value 132)
+	The job attribute OnExitRemove expression 'NumJobCompletions > JobMaxRetries || ExitCode =?= JobSuccessExitCode' evaluated to FALSE
+...
+040 (45227390.000.000) 2025-09-19 12:48:37 Started transferring input files
+	Transferring to host: <10.14.9.72:9618?addrs=10.14.9.72-9618&alias=node2072.cluster.ldas.cit&noUDP&sock=slot1_2_10628_2329_9004>
+...
+040 (45227390.000.000) 2025-09-19 12:48:37 Finished transferring input files
+...
+001 (45227390.000.000) 2025-09-19 12:48:37 Job executing on host: <10.14.9.72:9618?addrs=10.14.9.72-9618&alias=node2072.cluster.ldas.cit&noUDP&sock=startd_10539_74b4>
+	SlotName: slot1_2@node2072.cluster.ldas.cit
+	CondorScratchDir = "/var/lib/condor/execute/dir_1528488"
+	Cpus = 1
+	Disk = 1049600
+	GPUs = 0
+	Memory = 2048
+...
+006 (45227390.000.000) 2025-09-19 12:48:46 Image size of job updated: 1500000
+	129  -  MemoryUsage of job (MB)
+	132020  -  ResidentSetSize of job (KB)
+...
+006 (45227390.000.000) 2025-09-19 12:53:46 Image size of job updated: 1500000
+	1152  -  MemoryUsage of job (MB)
+	1178860  -  ResidentSetSize of job (KB)
+...
+040 (45227390.000.000) 2025-09-19 12:55:02 Started transferring output files
+...
+040 (45227390.000.000) 2025-09-19 12:55:03 Finished transferring output files
+...
+005 (45227390.000.000) 2025-09-19 12:55:03 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:06:06, Sys 0 00:00:04  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:08:05, Sys 0 00:00:12  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	113672748  -  Run Bytes Sent By Job
+	92109173  -  Run Bytes Received By Job
+	113672748  -  Total Bytes Sent By Job
+	184218346  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :   112264  1048576   1049600 
+	   GPUs                 :                           0 
+	   Memory (MB)          :     1152     2048      2048 
+	   TimeExecute (s)      :      385                    
+	   TimeSlotBusy (s)     :      387                    
+...

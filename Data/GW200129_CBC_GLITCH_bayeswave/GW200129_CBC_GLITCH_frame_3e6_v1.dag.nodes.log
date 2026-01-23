@@ -1,0 +1,127 @@
+000 (45064598.000.000) 2025-09-17 11:37:47 Job submitted from host: <10.14.0.121:9618?addrs=10.14.0.121-9618&alias=ldas-pcdev12.ligo.caltech.edu&noUDP&sock=schedd_14950_08f5>
+    DAG Node: create_data.00000
+...
+001 (45064598.000.000) 2025-09-17 11:42:42 Job executing on host: <10.14.9.83:9618?addrs=10.14.9.83-9618&alias=node2083.cluster.ldas.cit&noUDP&sock=startd_3702_d7b1>
+	SlotName: slot1_5@node2083.cluster.ldas.cit
+	CondorScratchDir = "/var/lib/condor/execute/dir_1360904"
+	Cpus = 1
+	Disk = 513024
+	GPUs = 0
+	Memory = 512
+...
+005 (45064598.000.000) 2025-09-17 11:42:44 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	789501  -  Run Bytes Sent By Job
+	122456  -  Run Bytes Received By Job
+	789501  -  Total Bytes Sent By Job
+	122456  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :      933   512000    513024 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        0      500       512 
+	   TimeExecute (s)      :        1                    
+	   TimeSlotBusy (s)     :        2                    
+...
+000 (45064599.000.000) 2025-09-17 11:42:52 Job submitted from host: <10.14.0.121:9618?addrs=10.14.0.121-9618&alias=ldas-pcdev12.ligo.caltech.edu&noUDP&sock=schedd_14950_08f5>
+    DAG Node: bayeswave.00000
+...
+001 (45064599.000.000) 2025-09-17 11:45:44 Job executing on host: <10.14.10.173:9618?addrs=10.14.10.173-9618&alias=node2423.cluster.ldas.cit&noUDP&sock=startd_2700_8dcc>
+	SlotName: slot1_8@node2423.cluster.ldas.cit
+	CondorScratchDir = "/var/lib/condor/execute/dir_607654"
+	Cpus = 20
+	Disk = 1049600
+	GPUs = 0
+	Memory = 1024
+...
+004 (45064599.000.000) 2025-09-18 11:52:31 Job was evicted. Code 1019 Subcode 0
+	(0) CPU times
+		Usr 9 20:47:01, Sys 1 07:04:18  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	37264390  -  Run Bytes Sent By Job
+	968717  -  Run Bytes Received By Job
+	Reason: Preempted for a Priority user
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                20        20 
+	   Disk (KB)            :    37704  1048576   1049600 
+	   GPUs                 :                           0 
+	   Memory (MB)          :      636     1024      1024 
+	   TimeExecute (s)      :      246                    
+	   TimeSlotBusy (s)     :    86807                    
+...
+001 (45064599.000.000) 2025-09-18 11:59:08 Job executing on host: <10.14.10.127:9618?addrs=10.14.10.127-9618&alias=node2377.cluster.ldas.cit&noUDP&sock=startd_2936_6e26>
+	SlotName: slot1_2@node2377.cluster.ldas.cit
+	CondorScratchDir = "/var/lib/condor/execute/dir_1338001"
+	Cpus = 20
+	Disk = 1049600
+	GPUs = 0
+	Memory = 1024
+...
+005 (45064599.000.000) 2025-09-19 12:30:51 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 7 13:25:28, Sys 2 15:15:24  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 17 10:12:29, Sys 3 22:19:42  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	91319208  -  Run Bytes Sent By Job
+	38233171  -  Run Bytes Received By Job
+	128583598  -  Total Bytes Sent By Job
+	39201888  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                20        20 
+	   Disk (KB)            :    90388  1048576   1049600 
+	   GPUs                 :                           0 
+	   Memory (MB)          :      733     1024      1024 
+	   TimeExecute (s)      :     1823                    
+	   TimeSlotBusy (s)     :    88303                    
+...
+000 (45227390.000.000) 2025-09-19 12:31:00 Job submitted from host: <10.14.0.121:9618?addrs=10.14.0.121-9618&alias=ldas-pcdev12.ligo.caltech.edu&noUDP&sock=schedd_14950_08f5>
+    DAG Node: bayeswave_post.00000
+...
+001 (45227390.000.000) 2025-09-19 12:34:19 Job executing on host: <10.14.5.96:9618?addrs=10.14.5.96-9618&alias=node1096.cluster.ldas.cit&noUDP&sock=startd_2121_6876>
+	SlotName: slot1_4@node1096.cluster.ldas.cit
+	CondorScratchDir = "/var/lib/condor/execute/dir_2034359"
+	Cpus = 1
+	Disk = 1049600
+	GPUs = 0
+	Memory = 2048
+...
+004 (45227390.000.000) 2025-09-19 12:38:54 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:01:59, Sys 0 00:00:08  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	92109173  -  Run Bytes Received By Job
+	(1) Normal termination (return value 132)
+	The job attribute OnExitRemove expression 'NumJobCompletions > JobMaxRetries || ExitCode =?= JobSuccessExitCode' evaluated to FALSE
+...
+001 (45227390.000.000) 2025-09-19 12:48:37 Job executing on host: <10.14.9.72:9618?addrs=10.14.9.72-9618&alias=node2072.cluster.ldas.cit&noUDP&sock=startd_10539_74b4>
+	SlotName: slot1_2@node2072.cluster.ldas.cit
+	CondorScratchDir = "/var/lib/condor/execute/dir_1528488"
+	Cpus = 1
+	Disk = 1049600
+	GPUs = 0
+	Memory = 2048
+...
+005 (45227390.000.000) 2025-09-19 12:55:03 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:06:06, Sys 0 00:00:04  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:08:05, Sys 0 00:00:12  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	113672748  -  Run Bytes Sent By Job
+	92109173  -  Run Bytes Received By Job
+	113672748  -  Total Bytes Sent By Job
+	184218346  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :   112264  1048576   1049600 
+	   GPUs                 :                           0 
+	   Memory (MB)          :     1152     2048      2048 
+	   TimeExecute (s)      :      385                    
+	   TimeSlotBusy (s)     :      387                    
+...
