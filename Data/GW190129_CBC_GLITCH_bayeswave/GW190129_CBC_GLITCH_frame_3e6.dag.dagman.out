@@ -1,0 +1,2372 @@
+09/09/25 13:43:58 ******************************************************
+09/09/25 13:43:58 ** condor_scheduniv_exec.42367150.0 (CONDOR_DAGMAN) STARTING UP
+09/09/25 13:43:58 ** /usr/bin/condor_dagman
+09/09/25 13:43:58 ** SubsystemInfo: name=DAGMAN type=DAGMAN(9) class=CLIENT(2)
+09/09/25 13:43:58 ** Configuration: subsystem:DAGMAN local:<NONE> class:CLIENT
+09/09/25 13:43:58 ** $CondorVersion: 24.10.2 2025-07-26 BuildID: 822775 PackageID: 24.10.2-1 GitSHA: 5320b335 $
+09/09/25 13:43:58 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/09/25 13:43:58 ** PID = 3041784 RealUID = 45707
+09/09/25 13:43:58 ** Log last touched time unavailable (No such file or directory)
+09/09/25 13:43:58 ******************************************************
+09/09/25 13:43:58 Using config source: /etc/condor/condor_config
+09/09/25 13:43:58 Using local config sources: 
+09/09/25 13:43:58    /etc/condor/config.d/00-htcondor-9.0.config
+09/09/25 13:43:58    /etc/condor/config.d/00-ldas
+09/09/25 13:43:58    /etc/condor/config.d/00-security
+09/09/25 13:43:58    /etc/condor/config.d/02-scheduler
+09/09/25 13:43:58    /etc/condor/config.d/10-security
+09/09/25 13:43:58    /etc/condor/config.d/10-stash-plugin.conf
+09/09/25 13:43:58    /etc/condor/config.d/15-dagman-default-append-vars
+09/09/25 13:43:58    /etc/condor/config.d/30-scratch-mount
+09/09/25 13:43:58    /etc/condor/config.d/40-oauth-credmon.conf
+09/09/25 13:43:58    /etc/condor/config.d/50-transfer-limits
+09/09/25 13:43:58    /etc/condor/config.d/65-system-periodic-hold
+09/09/25 13:43:58    /etc/condor/config.d/99-job-epoch-history
+09/09/25 13:43:58    /etc/condor/config.d/99-memory
+09/09/25 13:43:58    /etc/condor/config.d/99-request-disk
+09/09/25 13:43:58    /etc/condor/config.d/99-request-missing-units
+09/09/25 13:43:58    /etc/condor/config.d/99-shared-port-descriptor
+09/09/25 13:43:58    /etc/condor/config.d/99-transform
+09/09/25 13:43:58    /etc/condor/config.d/99-transform-pelican-retry
+09/09/25 13:43:58    /etc/condor/condor_config.local
+09/09/25 13:43:58 config Macros = 187, Sorted = 187, StringBytes = 9852, TablesBytes = 6916
+09/09/25 13:43:58 CLASSAD_CACHING is ENABLED
+09/09/25 13:43:58 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/09/25 13:43:58 Daemoncore: Listening at <0.0.0.0:1803> on TCP (ReliSock) and UDP (SafeSock).
+09/09/25 13:43:58 DaemonCore: command socket at <10.14.0.121:1803?addrs=10.14.0.121-1803&alias=ldas-pcdev12.ligo.caltech.edu>
+09/09/25 13:43:58 DaemonCore: private command socket at <10.14.0.121:1803?addrs=10.14.0.121-1803&alias=ldas-pcdev12.ligo.caltech.edu>
+09/09/25 13:43:58 DAGMAN_USE_STRICT setting: 1
+09/09/25 13:43:58 DAGMAN_VERBOSITY setting: 3
+09/09/25 13:43:58 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+09/09/25 13:43:58 DAGMAN_DEBUG_CACHE_ENABLE setting: True
+09/09/25 13:43:58 DAGMAN_SUBMIT_DELAY setting: 0
+09/09/25 13:43:58 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+09/09/25 13:43:58 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+09/09/25 13:43:58 DAGMAN_USE_JOIN_NODES setting: True
+09/09/25 13:43:58 DAGMAN_REPORT_GRAPH_METRICS setting: False
+09/09/25 13:43:58 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 100
+09/09/25 13:43:58 DAGMAN_AGGRESSIVE_SUBMIT setting: False
+09/09/25 13:43:58 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+09/09/25 13:43:58 DAGMAN_QUEUE_UPDATE_INTERVAL setting: 300.000000
+09/09/25 13:43:58 DAGMAN_DEFAULT_PRIORITY setting: 0
+09/09/25 13:43:58 DAGMAN_SUPPRESS_NOTIFICATION setting: False
+09/09/25 13:43:58 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+09/09/25 13:43:58 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+09/09/25 13:43:58 DAGMAN_RETRY_NODE_FIRST setting: False
+09/09/25 13:43:58 DAGMAN_MAX_JOBS_IDLE setting: 1000
+09/09/25 13:43:58 DAGMAN_MAX_JOBS_SUBMITTED setting: 12000
+09/09/25 13:43:58 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+09/09/25 13:43:58 DAGMAN_MAX_POST_SCRIPTS setting: 20
+09/09/25 13:43:58 DAGMAN_MAX_HOLD_SCRIPTS setting: 20
+09/09/25 13:43:58 DAGMAN_MUNGE_NODE_NAMES setting: True
+09/09/25 13:43:58 DAGMAN_ALLOW_ANY_NODE_NAME_CHARACTERS setting: False
+09/09/25 13:43:58 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+09/09/25 13:43:58 DAGMAN_SUBMIT_DEPTH_FIRST setting: True
+09/09/25 13:43:58 DAGMAN_ALWAYS_RUN_POST setting: False
+09/09/25 13:43:58 DAGMAN_CONDOR_SUBMIT_EXE setting: /usr/bin/condor_submit
+09/09/25 13:43:58 DAGMAN_CONDOR_RM_EXE setting: /usr/bin/condor_rm
+09/09/25 13:43:58 DAGMAN_USE_DIRECT_SUBMIT setting: True
+09/09/25 13:43:58 DAGMAN_PRODUCE_JOB_CREDENTIALS setting: True
+09/09/25 13:43:58 DAGMAN_DEFAULT_APPEND_VARS setting: True
+09/09/25 13:43:58 DAGMAN_INHERIT_ATTRS_PREFIX setting: 
+09/09/25 13:43:58 DAGMAN_INHERIT_ATTRS setting: 
+09/09/25 13:43:58 DAGMAN_ABORT_DUPLICATES setting: True
+09/09/25 13:43:58 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+09/09/25 13:43:58 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+09/09/25 13:43:58 DAGMAN_CHECK_QUEUE_INTERVAL setting: 28800
+09/09/25 13:43:58 DAGMAN_PRINT_JOB_TABLE_INTERVAL setting: 900
+09/09/25 13:43:58 DAGMAN_AUTO_RESCUE setting: True
+09/09/25 13:43:58 DAGMAN_MAX_RESCUE_NUM setting: 100
+09/09/25 13:43:58 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+09/09/25 13:43:58 DAGMAN_RESET_RETRIES_UPON_RESCUE setting: True
+09/09/25 13:43:58 DAGMAN_METRICS_FILE_VERSION setting: 2
+09/09/25 13:43:58 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+09/09/25 13:43:58 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+09/09/25 13:43:58 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+09/09/25 13:43:58 DAGMAN_MAX_JOB_HOLDS setting: 100
+09/09/25 13:43:58 DAGMAN_NODE_JOB_FAILURE_TOLERANCE setting: 0
+09/09/25 13:43:58 DAGMAN_HOLD_CLAIM_TIME setting: 20
+09/09/25 13:43:58 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+09/09/25 13:43:58 DAGMAN_REMOVE_NODE_JOBS setting: True
+09/09/25 13:43:58 DAGMAN_PUT_FAILED_JOBS_ON_HOLD setting: False
+09/09/25 13:43:58 DAGMAN_REMOVE_JOBS_AFTER_LIMIT_CHANGE setting: False
+09/09/25 13:43:58 DAGMAN will adjust edges after parsing
+09/09/25 13:43:58 Enabling log line cache for increased NFS performance.
+09/09/25 13:43:58 argv[0] == "condor_scheduniv_exec.42367150.0"
+09/09/25 13:43:58 argv[1] == "-Lockfile"
+09/09/25 13:43:58 argv[2] == "/home/sophie.bini/BW/BW_CPP/glitch_residual/Marginalization_Comparison/Heavy-Moderate/FRAME_INJ/GW190129_CBC_GLITCH_frame_3e6/GW190129_CBC_GLITCH_frame_3e6.dag.lock"
+09/09/25 13:43:58 argv[3] == "-Dag"
+09/09/25 13:43:58 argv[4] == "/home/sophie.bini/BW/BW_CPP/glitch_residual/Marginalization_Comparison/Heavy-Moderate/FRAME_INJ/GW190129_CBC_GLITCH_frame_3e6/GW190129_CBC_GLITCH_frame_3e6.dag"
+09/09/25 13:43:58 argv[5] == "-CsdVersion"
+09/09/25 13:43:58 argv[6] == "$CondorVersion: 24.10.2 2025-07-26 BuildID: 822775 PackageID: 24.10.2-1 GitSHA: 5320b335 $"
+09/09/25 13:43:58 argv[7] == "-dagman"
+09/09/25 13:43:58 argv[8] == "/usr/bin/condor_dagman"
+09/09/25 13:43:58 argv[9] == "-UseDagDir"
+09/09/25 13:43:58 argv[10] == "-AutoRescue"
+09/09/25 13:43:58 argv[11] == "1"
+09/09/25 13:43:58 argv[12] == "-DoRescueFrom"
+09/09/25 13:43:58 argv[13] == "0"
+09/09/25 13:43:58 argv[14] == "-import_env"
+09/09/25 13:43:58 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+09/09/25 13:43:58 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+09/09/25 13:43:58 Workflow batch-id: <42367150.0>
+09/09/25 13:43:58 Workflow batch-name: <GW190129_CBC_GLITCH_frame_3e6.dag+42367150>
+09/09/25 13:43:58 Workflow accounting_group: <>
+09/09/25 13:43:58 Workflow accounting_group_user: <>
+09/09/25 13:43:58 Warning: failed to get attribute DAGNodeName
+09/09/25 13:43:58 Default node log file is: </home/sophie.bini/BW/BW_CPP/glitch_residual/Marginalization_Comparison/Heavy-Moderate/FRAME_INJ/GW190129_CBC_GLITCH_frame_3e6/GW190129_CBC_GLITCH_frame_3e6.dag.nodes.log>
+09/09/25 13:43:58 DAG Lockfile will be written to /home/sophie.bini/BW/BW_CPP/glitch_residual/Marginalization_Comparison/Heavy-Moderate/FRAME_INJ/GW190129_CBC_GLITCH_frame_3e6/GW190129_CBC_GLITCH_frame_3e6.dag.lock
+09/09/25 13:43:58 DAG Input file is /home/sophie.bini/BW/BW_CPP/glitch_residual/Marginalization_Comparison/Heavy-Moderate/FRAME_INJ/GW190129_CBC_GLITCH_frame_3e6/GW190129_CBC_GLITCH_frame_3e6.dag
+09/09/25 13:43:58 Parsing 1 dagfiles
+09/09/25 13:43:58 Parsing /home/sophie.bini/BW/BW_CPP/glitch_residual/Marginalization_Comparison/Heavy-Moderate/FRAME_INJ/GW190129_CBC_GLITCH_frame_3e6/GW190129_CBC_GLITCH_frame_3e6.dag ...
+09/09/25 13:43:58 Adjusting edges
+09/09/25 13:43:58 Dag contains 3 total nodes
+09/09/25 13:43:58 Bootstrapping...
+09/09/25 13:43:58 Number of pre-completed nodes: 0
+09/09/25 13:43:58 MultiLogFiles: truncating log file /home/sophie.bini/BW/BW_CPP/glitch_residual/Marginalization_Comparison/Heavy-Moderate/FRAME_INJ/GW190129_CBC_GLITCH_frame_3e6/GW190129_CBC_GLITCH_frame_3e6.dag.nodes.log
+09/09/25 13:43:58 DAG status: 0 (DAG_STATUS_OK)
+09/09/25 13:43:58 Of 3 nodes total:
+09/09/25 13:43:58  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+09/09/25 13:43:58   ===     ===      ===     ===     ===        ===      ===      ===
+09/09/25 13:43:58     0       0        0       0       1          2        0        0
+09/09/25 13:43:58 0 job proc(s) currently held
+09/09/25 13:43:58 DAGMan Runtime Statistics: [EventCycleTimeSum=0.000; SleepCycleTimeSum=0.000; SubmitCycleTimeSum=0.000; EventCycleTimeCount=0.000; SleepCycleTimeCount=0.000; SubmitCycleTimeCount=0.000; LogProcessCycleTimeSum=0.000; LogProcessCycleTimeCount=0.000; ]
+09/09/25 13:43:58 Registering condor_event_timer...
+09/09/25 13:43:59 Submitting HTCondor Node create_data.00000 job(s)...
+09/09/25 13:43:59 Submitting node create_data.00000 from file create_data.sub using direct job submission
+09/09/25 13:43:59 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+09/09/25 13:43:59 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+09/09/25 13:43:59 CRED: CredD says we have everything: scitokens
+09/09/25 13:43:59 	assigned HTCondor ID (42367151.0.0)
+09/09/25 13:43:59 Just submitted 1 job this cycle...
+09/09/25 13:43:59 DAG status: 0 (DAG_STATUS_OK)
+09/09/25 13:43:59 Of 3 nodes total:
+09/09/25 13:43:59  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+09/09/25 13:43:59   ===     ===      ===     ===     ===        ===      ===      ===
+09/09/25 13:43:59     0       0        1       0       0          2        0        0
+09/09/25 13:43:59 0 job proc(s) currently held
+09/09/25 13:43:59 DAGMan Runtime Statistics: [EventCycleTimeSum=0.000; SleepCycleTimeSum=0.000; SubmitCycleTimeAvg=0.014; SubmitCycleTimeMax=0.014; SubmitCycleTimeMin=0.014; SubmitCycleTimeStd=0.014; SubmitCycleTimeSum=0.014; EventCycleTimeCount=0.000; SleepCycleTimeCount=0.000; SubmitCycleTimeCount=1.000; LogProcessCycleTimeSum=0.000; LogProcessCycleTimeCount=0.000; ]
+09/09/25 13:44:04 Currently monitoring 1 HTCondor log file(s)
+09/09/25 13:44:04 Reassigning the id of job create_data.00000 from (42367151.0.0) to (42367151.0.0)
+09/09/25 13:44:04 Event: ULOG_SUBMIT for HTCondor Node create_data.00000 (42367151.0.0) {09/09/25 13:43:59}
+09/09/25 13:44:04 Number of idle job procs: 1
+09/09/25 13:50:40 Currently monitoring 1 HTCondor log file(s)
+09/09/25 13:50:40 Event: ULOG_EXECUTE for HTCondor Node create_data.00000 (42367151.0.0) {09/09/25 13:50:37}
+09/09/25 13:50:40 Number of idle job procs: 0
+09/09/25 13:50:40 Event: ULOG_JOB_TERMINATED for HTCondor Node create_data.00000 (42367151.0.0) {09/09/25 13:50:39}
+09/09/25 13:50:40 Number of idle job procs: 0
+09/09/25 13:50:40 Node create_data.00000 job proc (42367151.0.0) completed successfully.
+09/09/25 13:50:40 Node create_data.00000 job(s) have exited the queue
+09/09/25 13:50:40 DAG status: 0 (DAG_STATUS_OK)
+09/09/25 13:50:40 Of 3 nodes total:
+09/09/25 13:50:40  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+09/09/25 13:50:40   ===     ===      ===     ===     ===        ===      ===      ===
+09/09/25 13:50:40     1       0        0       0       1          1        0        0
+09/09/25 13:50:40 0 job proc(s) currently held
+09/09/25 13:50:40 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.000; EventCycleTimeMax=0.017; EventCycleTimeMin=0.000; EventCycleTimeStd=0.002; EventCycleTimeSum=0.026; SleepCycleTimeAvg=5.005; SleepCycleTimeMax=5.006; SleepCycleTimeMin=5.001; SleepCycleTimeStd=0.001; SleepCycleTimeSum=400.398; SubmitCycleTimeAvg=0.000; SubmitCycleTimeMax=0.014; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.002; SubmitCycleTimeSum=0.014; EventCycleTimeCount=80.000; SleepCycleTimeCount=80.000; SubmitCycleTimeCount=81.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.002; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.004; LogProcessCycleTimeCount=2.000; ]
+09/09/25 13:50:45 Submitting HTCondor Node bayeswave.00000 job(s)...
+09/09/25 13:50:45 Submitting node bayeswave.00000 from file bayeswave.sub using direct job submission
+09/09/25 13:50:45 CRED: CredD says we have everything: scitokens
+09/09/25 13:50:45 	assigned HTCondor ID (42368257.0.0)
+09/09/25 13:50:45 Just submitted 1 job this cycle...
+09/09/25 13:50:45 DAG status: 0 (DAG_STATUS_OK)
+09/09/25 13:50:45 Of 3 nodes total:
+09/09/25 13:50:45  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+09/09/25 13:50:45   ===     ===      ===     ===     ===        ===      ===      ===
+09/09/25 13:50:45     1       0        1       0       0          1        0        0
+09/09/25 13:50:45 0 job proc(s) currently held
+09/09/25 13:50:45 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.000; EventCycleTimeMax=0.017; EventCycleTimeMin=0.000; EventCycleTimeStd=0.002; EventCycleTimeSum=0.031; SleepCycleTimeAvg=5.005; SleepCycleTimeMax=5.006; SleepCycleTimeMin=5.001; SleepCycleTimeStd=0.001; SleepCycleTimeSum=405.403; SubmitCycleTimeAvg=0.000; SubmitCycleTimeMax=0.014; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.002; SubmitCycleTimeSum=0.026; EventCycleTimeCount=81.000; SleepCycleTimeCount=81.000; SubmitCycleTimeCount=82.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.002; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.004; LogProcessCycleTimeCount=2.000; ]
+09/09/25 13:50:50 Currently monitoring 1 HTCondor log file(s)
+09/09/25 13:50:50 Reassigning the id of job bayeswave.00000 from (42368257.0.0) to (42368257.0.0)
+09/09/25 13:50:50 Event: ULOG_SUBMIT for HTCondor Node bayeswave.00000 (42368257.0.0) {09/09/25 13:50:45}
+09/09/25 13:50:50 Number of idle job procs: 1
+09/09/25 13:54:40 Currently monitoring 1 HTCondor log file(s)
+09/09/25 13:54:40 Event: ULOG_EXECUTE for HTCondor Node bayeswave.00000 (42368257.0.0) {09/09/25 13:54:37}
+09/09/25 13:54:40 Number of idle job procs: 0
+09/09/25 13:59:00 Total jobs placed to AP: 2
+09/09/25 13:59:00      Idle     Held     Running     Successful     Failed
+09/09/25 13:59:00       ===      ===         ===            ===        ===
+09/09/25 13:59:00         0        0           1              1          0
+09/09/25 14:04:41 601 seconds since last log event
+09/09/25 14:04:41 Pending DAG nodes:
+09/09/25 14:04:41   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 14:14:01 Total jobs placed to AP: 2
+09/09/25 14:14:01      Idle     Held     Running     Successful     Failed
+09/09/25 14:14:01       ===      ===         ===            ===        ===
+09/09/25 14:14:01         0        0           1              1          0
+09/09/25 14:14:41 1201 seconds since last log event
+09/09/25 14:14:41 Pending DAG nodes:
+09/09/25 14:14:41   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 14:24:42 1802 seconds since last log event
+09/09/25 14:24:42 Pending DAG nodes:
+09/09/25 14:24:42   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 14:29:02 Total jobs placed to AP: 2
+09/09/25 14:29:02      Idle     Held     Running     Successful     Failed
+09/09/25 14:29:02       ===      ===         ===            ===        ===
+09/09/25 14:29:02         0        0           1              1          0
+09/09/25 14:34:42 2402 seconds since last log event
+09/09/25 14:34:42 Pending DAG nodes:
+09/09/25 14:34:42   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 14:44:03 Total jobs placed to AP: 2
+09/09/25 14:44:03      Idle     Held     Running     Successful     Failed
+09/09/25 14:44:03       ===      ===         ===            ===        ===
+09/09/25 14:44:03         0        0           1              1          0
+09/09/25 14:44:43 3003 seconds since last log event
+09/09/25 14:44:43 Pending DAG nodes:
+09/09/25 14:44:43   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 14:54:44 3604 seconds since last log event
+09/09/25 14:54:44 Pending DAG nodes:
+09/09/25 14:54:44   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 14:59:04 Total jobs placed to AP: 2
+09/09/25 14:59:04      Idle     Held     Running     Successful     Failed
+09/09/25 14:59:04       ===      ===         ===            ===        ===
+09/09/25 14:59:04         0        0           1              1          0
+09/09/25 15:04:44 4204 seconds since last log event
+09/09/25 15:04:44 Pending DAG nodes:
+09/09/25 15:04:44   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 15:14:05 Total jobs placed to AP: 2
+09/09/25 15:14:05      Idle     Held     Running     Successful     Failed
+09/09/25 15:14:05       ===      ===         ===            ===        ===
+09/09/25 15:14:05         0        0           1              1          0
+09/09/25 15:14:45 4805 seconds since last log event
+09/09/25 15:14:45 Pending DAG nodes:
+09/09/25 15:14:45   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 15:24:46 5406 seconds since last log event
+09/09/25 15:24:46 Pending DAG nodes:
+09/09/25 15:24:46   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 15:29:06 Total jobs placed to AP: 2
+09/09/25 15:29:06      Idle     Held     Running     Successful     Failed
+09/09/25 15:29:06       ===      ===         ===            ===        ===
+09/09/25 15:29:06         0        0           1              1          0
+09/09/25 15:34:46 6006 seconds since last log event
+09/09/25 15:34:46 Pending DAG nodes:
+09/09/25 15:34:46   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 15:44:07 Total jobs placed to AP: 2
+09/09/25 15:44:07      Idle     Held     Running     Successful     Failed
+09/09/25 15:44:07       ===      ===         ===            ===        ===
+09/09/25 15:44:07         0        0           1              1          0
+09/09/25 15:44:47 6607 seconds since last log event
+09/09/25 15:44:47 Pending DAG nodes:
+09/09/25 15:44:47   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 15:54:47 7207 seconds since last log event
+09/09/25 15:54:47 Pending DAG nodes:
+09/09/25 15:54:47   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 15:59:08 Total jobs placed to AP: 2
+09/09/25 15:59:08      Idle     Held     Running     Successful     Failed
+09/09/25 15:59:08       ===      ===         ===            ===        ===
+09/09/25 15:59:08         0        0           1              1          0
+09/09/25 16:04:48 7808 seconds since last log event
+09/09/25 16:04:48 Pending DAG nodes:
+09/09/25 16:04:48   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 16:14:08 Total jobs placed to AP: 2
+09/09/25 16:14:08      Idle     Held     Running     Successful     Failed
+09/09/25 16:14:08       ===      ===         ===            ===        ===
+09/09/25 16:14:08         0        0           1              1          0
+09/09/25 16:14:49 8409 seconds since last log event
+09/09/25 16:14:49 Pending DAG nodes:
+09/09/25 16:14:49   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 16:24:49 9009 seconds since last log event
+09/09/25 16:24:49 Pending DAG nodes:
+09/09/25 16:24:49   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 16:29:09 Total jobs placed to AP: 2
+09/09/25 16:29:09      Idle     Held     Running     Successful     Failed
+09/09/25 16:29:09       ===      ===         ===            ===        ===
+09/09/25 16:29:09         0        0           1              1          0
+09/09/25 16:34:50 9610 seconds since last log event
+09/09/25 16:34:50 Pending DAG nodes:
+09/09/25 16:34:50   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 16:44:10 Total jobs placed to AP: 2
+09/09/25 16:44:10      Idle     Held     Running     Successful     Failed
+09/09/25 16:44:10       ===      ===         ===            ===        ===
+09/09/25 16:44:10         0        0           1              1          0
+09/09/25 16:44:50 10210 seconds since last log event
+09/09/25 16:44:50 Pending DAG nodes:
+09/09/25 16:44:50   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 16:54:51 10811 seconds since last log event
+09/09/25 16:54:51 Pending DAG nodes:
+09/09/25 16:54:51   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 16:59:11 Total jobs placed to AP: 2
+09/09/25 16:59:11      Idle     Held     Running     Successful     Failed
+09/09/25 16:59:11       ===      ===         ===            ===        ===
+09/09/25 16:59:11         0        0           1              1          0
+09/09/25 17:04:51 11411 seconds since last log event
+09/09/25 17:04:51 Pending DAG nodes:
+09/09/25 17:04:51   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 17:14:12 Total jobs placed to AP: 2
+09/09/25 17:14:12      Idle     Held     Running     Successful     Failed
+09/09/25 17:14:12       ===      ===         ===            ===        ===
+09/09/25 17:14:12         0        0           1              1          0
+09/09/25 17:14:52 12012 seconds since last log event
+09/09/25 17:14:52 Pending DAG nodes:
+09/09/25 17:14:52   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 17:24:53 12613 seconds since last log event
+09/09/25 17:24:53 Pending DAG nodes:
+09/09/25 17:24:53   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 17:29:13 Total jobs placed to AP: 2
+09/09/25 17:29:13      Idle     Held     Running     Successful     Failed
+09/09/25 17:29:13       ===      ===         ===            ===        ===
+09/09/25 17:29:13         0        0           1              1          0
+09/09/25 17:34:53 13213 seconds since last log event
+09/09/25 17:34:53 Pending DAG nodes:
+09/09/25 17:34:53   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 17:44:13 Total jobs placed to AP: 2
+09/09/25 17:44:13      Idle     Held     Running     Successful     Failed
+09/09/25 17:44:13       ===      ===         ===            ===        ===
+09/09/25 17:44:13         0        0           1              1          0
+09/09/25 17:44:53 13813 seconds since last log event
+09/09/25 17:44:53 Pending DAG nodes:
+09/09/25 17:44:53   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 17:54:57 14417 seconds since last log event
+09/09/25 17:54:57 Pending DAG nodes:
+09/09/25 17:54:57   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 17:59:17 Total jobs placed to AP: 2
+09/09/25 17:59:17      Idle     Held     Running     Successful     Failed
+09/09/25 17:59:17       ===      ===         ===            ===        ===
+09/09/25 17:59:17         0        0           1              1          0
+09/09/25 18:04:57 15017 seconds since last log event
+09/09/25 18:04:57 Pending DAG nodes:
+09/09/25 18:04:57   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 18:14:18 Total jobs placed to AP: 2
+09/09/25 18:14:18      Idle     Held     Running     Successful     Failed
+09/09/25 18:14:18       ===      ===         ===            ===        ===
+09/09/25 18:14:18         0        0           1              1          0
+09/09/25 18:14:58 15618 seconds since last log event
+09/09/25 18:14:58 Pending DAG nodes:
+09/09/25 18:14:58   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 18:24:59 16219 seconds since last log event
+09/09/25 18:24:59 Pending DAG nodes:
+09/09/25 18:24:59   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 18:29:19 Total jobs placed to AP: 2
+09/09/25 18:29:19      Idle     Held     Running     Successful     Failed
+09/09/25 18:29:19       ===      ===         ===            ===        ===
+09/09/25 18:29:19         0        0           1              1          0
+09/09/25 18:34:59 16819 seconds since last log event
+09/09/25 18:34:59 Pending DAG nodes:
+09/09/25 18:34:59   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 18:44:20 Total jobs placed to AP: 2
+09/09/25 18:44:20      Idle     Held     Running     Successful     Failed
+09/09/25 18:44:20       ===      ===         ===            ===        ===
+09/09/25 18:44:20         0        0           1              1          0
+09/09/25 18:45:00 17420 seconds since last log event
+09/09/25 18:45:00 Pending DAG nodes:
+09/09/25 18:45:00   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 18:55:00 18020 seconds since last log event
+09/09/25 18:55:00 Pending DAG nodes:
+09/09/25 18:55:00   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 18:59:20 Total jobs placed to AP: 2
+09/09/25 18:59:20      Idle     Held     Running     Successful     Failed
+09/09/25 18:59:20       ===      ===         ===            ===        ===
+09/09/25 18:59:20         0        0           1              1          0
+09/09/25 19:05:01 18621 seconds since last log event
+09/09/25 19:05:01 Pending DAG nodes:
+09/09/25 19:05:01   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 19:14:21 Total jobs placed to AP: 2
+09/09/25 19:14:21      Idle     Held     Running     Successful     Failed
+09/09/25 19:14:21       ===      ===         ===            ===        ===
+09/09/25 19:14:21         0        0           1              1          0
+09/09/25 19:15:01 19221 seconds since last log event
+09/09/25 19:15:01 Pending DAG nodes:
+09/09/25 19:15:01   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 19:25:02 19822 seconds since last log event
+09/09/25 19:25:02 Pending DAG nodes:
+09/09/25 19:25:02   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 19:29:22 Total jobs placed to AP: 2
+09/09/25 19:29:22      Idle     Held     Running     Successful     Failed
+09/09/25 19:29:22       ===      ===         ===            ===        ===
+09/09/25 19:29:22         0        0           1              1          0
+09/09/25 19:35:03 20423 seconds since last log event
+09/09/25 19:35:03 Pending DAG nodes:
+09/09/25 19:35:03   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 19:44:23 Total jobs placed to AP: 2
+09/09/25 19:44:23      Idle     Held     Running     Successful     Failed
+09/09/25 19:44:23       ===      ===         ===            ===        ===
+09/09/25 19:44:23         0        0           1              1          0
+09/09/25 19:45:03 21023 seconds since last log event
+09/09/25 19:45:03 Pending DAG nodes:
+09/09/25 19:45:03   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 19:55:04 21624 seconds since last log event
+09/09/25 19:55:04 Pending DAG nodes:
+09/09/25 19:55:04   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 19:59:24 Total jobs placed to AP: 2
+09/09/25 19:59:24      Idle     Held     Running     Successful     Failed
+09/09/25 19:59:24       ===      ===         ===            ===        ===
+09/09/25 19:59:24         0        0           1              1          0
+09/09/25 20:05:04 22224 seconds since last log event
+09/09/25 20:05:04 Pending DAG nodes:
+09/09/25 20:05:04   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 20:14:25 Total jobs placed to AP: 2
+09/09/25 20:14:25      Idle     Held     Running     Successful     Failed
+09/09/25 20:14:25       ===      ===         ===            ===        ===
+09/09/25 20:14:25         0        0           1              1          0
+09/09/25 20:15:05 22825 seconds since last log event
+09/09/25 20:15:05 Pending DAG nodes:
+09/09/25 20:15:05   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 20:25:05 23425 seconds since last log event
+09/09/25 20:25:05 Pending DAG nodes:
+09/09/25 20:25:05   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 20:29:25 Total jobs placed to AP: 2
+09/09/25 20:29:25      Idle     Held     Running     Successful     Failed
+09/09/25 20:29:25       ===      ===         ===            ===        ===
+09/09/25 20:29:25         0        0           1              1          0
+09/09/25 20:35:05 24025 seconds since last log event
+09/09/25 20:35:05 Pending DAG nodes:
+09/09/25 20:35:05   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 20:44:26 Total jobs placed to AP: 2
+09/09/25 20:44:26      Idle     Held     Running     Successful     Failed
+09/09/25 20:44:26       ===      ===         ===            ===        ===
+09/09/25 20:44:26         0        0           1              1          0
+09/09/25 20:45:06 24626 seconds since last log event
+09/09/25 20:45:06 Pending DAG nodes:
+09/09/25 20:45:06   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 20:55:06 25226 seconds since last log event
+09/09/25 20:55:06 Pending DAG nodes:
+09/09/25 20:55:06   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 20:59:27 Total jobs placed to AP: 2
+09/09/25 20:59:27      Idle     Held     Running     Successful     Failed
+09/09/25 20:59:27       ===      ===         ===            ===        ===
+09/09/25 20:59:27         0        0           1              1          0
+09/09/25 21:05:07 25827 seconds since last log event
+09/09/25 21:05:07 Pending DAG nodes:
+09/09/25 21:05:07   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 21:14:27 Total jobs placed to AP: 2
+09/09/25 21:14:27      Idle     Held     Running     Successful     Failed
+09/09/25 21:14:27       ===      ===         ===            ===        ===
+09/09/25 21:14:27         0        0           1              1          0
+09/09/25 21:15:08 26428 seconds since last log event
+09/09/25 21:15:08 Pending DAG nodes:
+09/09/25 21:15:08   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 21:25:08 27028 seconds since last log event
+09/09/25 21:25:08 Pending DAG nodes:
+09/09/25 21:25:08   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 21:29:28 Total jobs placed to AP: 2
+09/09/25 21:29:28      Idle     Held     Running     Successful     Failed
+09/09/25 21:29:28       ===      ===         ===            ===        ===
+09/09/25 21:29:28         0        0           1              1          0
+09/09/25 21:35:09 27629 seconds since last log event
+09/09/25 21:35:09 Pending DAG nodes:
+09/09/25 21:35:09   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 21:44:29 Total jobs placed to AP: 2
+09/09/25 21:44:29      Idle     Held     Running     Successful     Failed
+09/09/25 21:44:29       ===      ===         ===            ===        ===
+09/09/25 21:44:29         0        0           1              1          0
+09/09/25 21:45:09 28229 seconds since last log event
+09/09/25 21:45:09 Pending DAG nodes:
+09/09/25 21:45:09   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 21:55:09 28829 seconds since last log event
+09/09/25 21:55:09 Pending DAG nodes:
+09/09/25 21:55:09   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 21:55:09 Querying local schedd for associated jobs in queue
+09/09/25 21:55:09 All pending job states validated
+09/09/25 21:59:29 Total jobs placed to AP: 2
+09/09/25 21:59:29      Idle     Held     Running     Successful     Failed
+09/09/25 21:59:29       ===      ===         ===            ===        ===
+09/09/25 21:59:29         0        0           1              1          0
+09/09/25 22:05:10 29430 seconds since last log event
+09/09/25 22:05:10 Pending DAG nodes:
+09/09/25 22:05:10   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 22:14:30 Total jobs placed to AP: 2
+09/09/25 22:14:30      Idle     Held     Running     Successful     Failed
+09/09/25 22:14:30       ===      ===         ===            ===        ===
+09/09/25 22:14:30         0        0           1              1          0
+09/09/25 22:15:10 30030 seconds since last log event
+09/09/25 22:15:10 Pending DAG nodes:
+09/09/25 22:15:10   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 22:25:10 30630 seconds since last log event
+09/09/25 22:25:10 Pending DAG nodes:
+09/09/25 22:25:10   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 22:29:30 Total jobs placed to AP: 2
+09/09/25 22:29:30      Idle     Held     Running     Successful     Failed
+09/09/25 22:29:30       ===      ===         ===            ===        ===
+09/09/25 22:29:30         0        0           1              1          0
+09/09/25 22:35:10 31230 seconds since last log event
+09/09/25 22:35:10 Pending DAG nodes:
+09/09/25 22:35:10   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 22:44:31 Total jobs placed to AP: 2
+09/09/25 22:44:31      Idle     Held     Running     Successful     Failed
+09/09/25 22:44:31       ===      ===         ===            ===        ===
+09/09/25 22:44:31         0        0           1              1          0
+09/09/25 22:45:11 31831 seconds since last log event
+09/09/25 22:45:11 Pending DAG nodes:
+09/09/25 22:45:11   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 22:55:11 32431 seconds since last log event
+09/09/25 22:55:11 Pending DAG nodes:
+09/09/25 22:55:11   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 22:59:32 Total jobs placed to AP: 2
+09/09/25 22:59:32      Idle     Held     Running     Successful     Failed
+09/09/25 22:59:32       ===      ===         ===            ===        ===
+09/09/25 22:59:32         0        0           1              1          0
+09/09/25 23:05:12 33032 seconds since last log event
+09/09/25 23:05:12 Pending DAG nodes:
+09/09/25 23:05:12   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 23:14:33 Total jobs placed to AP: 2
+09/09/25 23:14:33      Idle     Held     Running     Successful     Failed
+09/09/25 23:14:33       ===      ===         ===            ===        ===
+09/09/25 23:14:33         0        0           1              1          0
+09/09/25 23:15:13 33633 seconds since last log event
+09/09/25 23:15:13 Pending DAG nodes:
+09/09/25 23:15:13   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 23:25:13 34233 seconds since last log event
+09/09/25 23:25:13 Pending DAG nodes:
+09/09/25 23:25:13   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 23:29:34 Total jobs placed to AP: 2
+09/09/25 23:29:34      Idle     Held     Running     Successful     Failed
+09/09/25 23:29:34       ===      ===         ===            ===        ===
+09/09/25 23:29:34         0        0           1              1          0
+09/09/25 23:35:14 34834 seconds since last log event
+09/09/25 23:35:14 Pending DAG nodes:
+09/09/25 23:35:14   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 23:44:34 Total jobs placed to AP: 2
+09/09/25 23:44:34      Idle     Held     Running     Successful     Failed
+09/09/25 23:44:34       ===      ===         ===            ===        ===
+09/09/25 23:44:34         0        0           1              1          0
+09/09/25 23:45:14 35434 seconds since last log event
+09/09/25 23:45:14 Pending DAG nodes:
+09/09/25 23:45:14   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 23:55:15 36035 seconds since last log event
+09/09/25 23:55:15 Pending DAG nodes:
+09/09/25 23:55:15   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/09/25 23:59:35 Total jobs placed to AP: 2
+09/09/25 23:59:35      Idle     Held     Running     Successful     Failed
+09/09/25 23:59:35       ===      ===         ===            ===        ===
+09/09/25 23:59:35         0        0           1              1          0
+09/10/25 00:05:16 36636 seconds since last log event
+09/10/25 00:05:16 Pending DAG nodes:
+09/10/25 00:05:16   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 00:14:36 Total jobs placed to AP: 2
+09/10/25 00:14:36      Idle     Held     Running     Successful     Failed
+09/10/25 00:14:36       ===      ===         ===            ===        ===
+09/10/25 00:14:36         0        0           1              1          0
+09/10/25 00:15:16 37236 seconds since last log event
+09/10/25 00:15:16 Pending DAG nodes:
+09/10/25 00:15:16   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 00:25:17 37837 seconds since last log event
+09/10/25 00:25:17 Pending DAG nodes:
+09/10/25 00:25:17   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 00:29:37 Total jobs placed to AP: 2
+09/10/25 00:29:37      Idle     Held     Running     Successful     Failed
+09/10/25 00:29:37       ===      ===         ===            ===        ===
+09/10/25 00:29:37         0        0           1              1          0
+09/10/25 00:35:18 38438 seconds since last log event
+09/10/25 00:35:18 Pending DAG nodes:
+09/10/25 00:35:18   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 00:44:38 Total jobs placed to AP: 2
+09/10/25 00:44:38      Idle     Held     Running     Successful     Failed
+09/10/25 00:44:38       ===      ===         ===            ===        ===
+09/10/25 00:44:38         0        0           1              1          0
+09/10/25 00:45:18 39038 seconds since last log event
+09/10/25 00:45:18 Pending DAG nodes:
+09/10/25 00:45:18   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 00:55:19 39639 seconds since last log event
+09/10/25 00:55:19 Pending DAG nodes:
+09/10/25 00:55:19   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 00:59:39 Total jobs placed to AP: 2
+09/10/25 00:59:39      Idle     Held     Running     Successful     Failed
+09/10/25 00:59:39       ===      ===         ===            ===        ===
+09/10/25 00:59:39         0        0           1              1          0
+09/10/25 01:05:19 40239 seconds since last log event
+09/10/25 01:05:19 Pending DAG nodes:
+09/10/25 01:05:19   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 01:14:40 Total jobs placed to AP: 2
+09/10/25 01:14:40      Idle     Held     Running     Successful     Failed
+09/10/25 01:14:40       ===      ===         ===            ===        ===
+09/10/25 01:14:40         0        0           1              1          0
+09/10/25 01:15:20 40840 seconds since last log event
+09/10/25 01:15:20 Pending DAG nodes:
+09/10/25 01:15:20   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 01:25:21 41441 seconds since last log event
+09/10/25 01:25:21 Pending DAG nodes:
+09/10/25 01:25:21   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 01:29:41 Total jobs placed to AP: 2
+09/10/25 01:29:41      Idle     Held     Running     Successful     Failed
+09/10/25 01:29:41       ===      ===         ===            ===        ===
+09/10/25 01:29:41         0        0           1              1          0
+09/10/25 01:35:21 42041 seconds since last log event
+09/10/25 01:35:21 Pending DAG nodes:
+09/10/25 01:35:21   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 01:44:42 Total jobs placed to AP: 2
+09/10/25 01:44:42      Idle     Held     Running     Successful     Failed
+09/10/25 01:44:42       ===      ===         ===            ===        ===
+09/10/25 01:44:42         0        0           1              1          0
+09/10/25 01:45:22 42642 seconds since last log event
+09/10/25 01:45:22 Pending DAG nodes:
+09/10/25 01:45:22   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 01:55:22 43242 seconds since last log event
+09/10/25 01:55:22 Pending DAG nodes:
+09/10/25 01:55:22   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 01:59:42 Total jobs placed to AP: 2
+09/10/25 01:59:42      Idle     Held     Running     Successful     Failed
+09/10/25 01:59:42       ===      ===         ===            ===        ===
+09/10/25 01:59:42         0        0           1              1          0
+09/10/25 02:05:22 43842 seconds since last log event
+09/10/25 02:05:22 Pending DAG nodes:
+09/10/25 02:05:22   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 02:14:43 Total jobs placed to AP: 2
+09/10/25 02:14:43      Idle     Held     Running     Successful     Failed
+09/10/25 02:14:43       ===      ===         ===            ===        ===
+09/10/25 02:14:43         0        0           1              1          0
+09/10/25 02:15:23 44443 seconds since last log event
+09/10/25 02:15:23 Pending DAG nodes:
+09/10/25 02:15:23   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 02:25:23 45043 seconds since last log event
+09/10/25 02:25:23 Pending DAG nodes:
+09/10/25 02:25:23   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 02:29:44 Total jobs placed to AP: 2
+09/10/25 02:29:44      Idle     Held     Running     Successful     Failed
+09/10/25 02:29:44       ===      ===         ===            ===        ===
+09/10/25 02:29:44         0        0           1              1          0
+09/10/25 02:35:24 45644 seconds since last log event
+09/10/25 02:35:24 Pending DAG nodes:
+09/10/25 02:35:24   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 02:44:45 Total jobs placed to AP: 2
+09/10/25 02:44:45      Idle     Held     Running     Successful     Failed
+09/10/25 02:44:45       ===      ===         ===            ===        ===
+09/10/25 02:44:45         0        0           1              1          0
+09/10/25 02:45:25 46245 seconds since last log event
+09/10/25 02:45:25 Pending DAG nodes:
+09/10/25 02:45:25   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 02:55:25 46845 seconds since last log event
+09/10/25 02:55:25 Pending DAG nodes:
+09/10/25 02:55:25   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 02:59:46 Total jobs placed to AP: 2
+09/10/25 02:59:46      Idle     Held     Running     Successful     Failed
+09/10/25 02:59:46       ===      ===         ===            ===        ===
+09/10/25 02:59:46         0        0           1              1          0
+09/10/25 03:05:26 47446 seconds since last log event
+09/10/25 03:05:26 Pending DAG nodes:
+09/10/25 03:05:26   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 03:14:47 Total jobs placed to AP: 2
+09/10/25 03:14:47      Idle     Held     Running     Successful     Failed
+09/10/25 03:14:47       ===      ===         ===            ===        ===
+09/10/25 03:14:47         0        0           1              1          0
+09/10/25 03:15:27 48047 seconds since last log event
+09/10/25 03:15:27 Pending DAG nodes:
+09/10/25 03:15:27   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 03:25:27 48647 seconds since last log event
+09/10/25 03:25:27 Pending DAG nodes:
+09/10/25 03:25:27   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 03:29:47 Total jobs placed to AP: 2
+09/10/25 03:29:47      Idle     Held     Running     Successful     Failed
+09/10/25 03:29:47       ===      ===         ===            ===        ===
+09/10/25 03:29:47         0        0           1              1          0
+09/10/25 03:35:28 49248 seconds since last log event
+09/10/25 03:35:28 Pending DAG nodes:
+09/10/25 03:35:28   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 03:44:48 Total jobs placed to AP: 2
+09/10/25 03:44:48      Idle     Held     Running     Successful     Failed
+09/10/25 03:44:48       ===      ===         ===            ===        ===
+09/10/25 03:44:48         0        0           1              1          0
+09/10/25 03:45:28 49848 seconds since last log event
+09/10/25 03:45:28 Pending DAG nodes:
+09/10/25 03:45:28   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 03:55:29 50449 seconds since last log event
+09/10/25 03:55:29 Pending DAG nodes:
+09/10/25 03:55:29   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 03:59:49 Total jobs placed to AP: 2
+09/10/25 03:59:49      Idle     Held     Running     Successful     Failed
+09/10/25 03:59:49       ===      ===         ===            ===        ===
+09/10/25 03:59:49         0        0           1              1          0
+09/10/25 04:05:30 51050 seconds since last log event
+09/10/25 04:05:30 Pending DAG nodes:
+09/10/25 04:05:30   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 04:14:50 Total jobs placed to AP: 2
+09/10/25 04:14:50      Idle     Held     Running     Successful     Failed
+09/10/25 04:14:50       ===      ===         ===            ===        ===
+09/10/25 04:14:50         0        0           1              1          0
+09/10/25 04:15:30 51650 seconds since last log event
+09/10/25 04:15:30 Pending DAG nodes:
+09/10/25 04:15:30   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 04:25:31 52251 seconds since last log event
+09/10/25 04:25:31 Pending DAG nodes:
+09/10/25 04:25:31   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 04:29:51 Total jobs placed to AP: 2
+09/10/25 04:29:51      Idle     Held     Running     Successful     Failed
+09/10/25 04:29:51       ===      ===         ===            ===        ===
+09/10/25 04:29:51         0        0           1              1          0
+09/10/25 04:35:32 52852 seconds since last log event
+09/10/25 04:35:32 Pending DAG nodes:
+09/10/25 04:35:32   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 04:44:52 Total jobs placed to AP: 2
+09/10/25 04:44:52      Idle     Held     Running     Successful     Failed
+09/10/25 04:44:52       ===      ===         ===            ===        ===
+09/10/25 04:44:52         0        0           1              1          0
+09/10/25 04:45:32 53452 seconds since last log event
+09/10/25 04:45:32 Pending DAG nodes:
+09/10/25 04:45:32   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 04:55:33 54053 seconds since last log event
+09/10/25 04:55:33 Pending DAG nodes:
+09/10/25 04:55:33   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 04:59:53 Total jobs placed to AP: 2
+09/10/25 04:59:53      Idle     Held     Running     Successful     Failed
+09/10/25 04:59:53       ===      ===         ===            ===        ===
+09/10/25 04:59:53         0        0           1              1          0
+09/10/25 05:05:33 54653 seconds since last log event
+09/10/25 05:05:33 Pending DAG nodes:
+09/10/25 05:05:33   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 05:14:54 Total jobs placed to AP: 2
+09/10/25 05:14:54      Idle     Held     Running     Successful     Failed
+09/10/25 05:14:54       ===      ===         ===            ===        ===
+09/10/25 05:14:54         0        0           1              1          0
+09/10/25 05:15:34 55254 seconds since last log event
+09/10/25 05:15:34 Pending DAG nodes:
+09/10/25 05:15:34   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 05:25:35 55855 seconds since last log event
+09/10/25 05:25:35 Pending DAG nodes:
+09/10/25 05:25:35   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 05:29:55 Total jobs placed to AP: 2
+09/10/25 05:29:55      Idle     Held     Running     Successful     Failed
+09/10/25 05:29:55       ===      ===         ===            ===        ===
+09/10/25 05:29:55         0        0           1              1          0
+09/10/25 05:35:35 56455 seconds since last log event
+09/10/25 05:35:35 Pending DAG nodes:
+09/10/25 05:35:35   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 05:44:56 Total jobs placed to AP: 2
+09/10/25 05:44:56      Idle     Held     Running     Successful     Failed
+09/10/25 05:44:56       ===      ===         ===            ===        ===
+09/10/25 05:44:56         0        0           1              1          0
+09/10/25 05:45:36 57056 seconds since last log event
+09/10/25 05:45:36 Pending DAG nodes:
+09/10/25 05:45:36   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 05:55:37 57657 seconds since last log event
+09/10/25 05:55:37 Pending DAG nodes:
+09/10/25 05:55:37   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 05:59:57 Total jobs placed to AP: 2
+09/10/25 05:59:57      Idle     Held     Running     Successful     Failed
+09/10/25 05:59:57       ===      ===         ===            ===        ===
+09/10/25 05:59:57         0        0           1              1          0
+09/10/25 06:05:37 58257 seconds since last log event
+09/10/25 06:05:37 Pending DAG nodes:
+09/10/25 06:05:37   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 06:14:58 Total jobs placed to AP: 2
+09/10/25 06:14:58      Idle     Held     Running     Successful     Failed
+09/10/25 06:14:58       ===      ===         ===            ===        ===
+09/10/25 06:14:58         0        0           1              1          0
+09/10/25 06:15:38 58858 seconds since last log event
+09/10/25 06:15:38 Pending DAG nodes:
+09/10/25 06:15:38   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 06:25:38 59458 seconds since last log event
+09/10/25 06:25:38 Pending DAG nodes:
+09/10/25 06:25:38   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 06:29:59 Total jobs placed to AP: 2
+09/10/25 06:29:59      Idle     Held     Running     Successful     Failed
+09/10/25 06:29:59       ===      ===         ===            ===        ===
+09/10/25 06:29:59         0        0           1              1          0
+09/10/25 06:35:39 60059 seconds since last log event
+09/10/25 06:35:39 Pending DAG nodes:
+09/10/25 06:35:39   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 06:45:00 Total jobs placed to AP: 2
+09/10/25 06:45:00      Idle     Held     Running     Successful     Failed
+09/10/25 06:45:00       ===      ===         ===            ===        ===
+09/10/25 06:45:00         0        0           1              1          0
+09/10/25 06:45:40 60660 seconds since last log event
+09/10/25 06:45:40 Pending DAG nodes:
+09/10/25 06:45:40   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 06:55:40 61260 seconds since last log event
+09/10/25 06:55:40 Pending DAG nodes:
+09/10/25 06:55:40   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 07:00:01 Total jobs placed to AP: 2
+09/10/25 07:00:01      Idle     Held     Running     Successful     Failed
+09/10/25 07:00:01       ===      ===         ===            ===        ===
+09/10/25 07:00:01         0        0           1              1          0
+09/10/25 07:05:41 61861 seconds since last log event
+09/10/25 07:05:41 Pending DAG nodes:
+09/10/25 07:05:41   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 07:15:01 Total jobs placed to AP: 2
+09/10/25 07:15:01      Idle     Held     Running     Successful     Failed
+09/10/25 07:15:01       ===      ===         ===            ===        ===
+09/10/25 07:15:01         0        0           1              1          0
+09/10/25 07:15:41 62461 seconds since last log event
+09/10/25 07:15:41 Pending DAG nodes:
+09/10/25 07:15:41   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 07:25:42 63062 seconds since last log event
+09/10/25 07:25:42 Pending DAG nodes:
+09/10/25 07:25:42   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 07:30:02 Total jobs placed to AP: 2
+09/10/25 07:30:02      Idle     Held     Running     Successful     Failed
+09/10/25 07:30:02       ===      ===         ===            ===        ===
+09/10/25 07:30:02         0        0           1              1          0
+09/10/25 07:35:43 63663 seconds since last log event
+09/10/25 07:35:43 Pending DAG nodes:
+09/10/25 07:35:43   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 07:45:03 Total jobs placed to AP: 2
+09/10/25 07:45:03      Idle     Held     Running     Successful     Failed
+09/10/25 07:45:03       ===      ===         ===            ===        ===
+09/10/25 07:45:03         0        0           1              1          0
+09/10/25 07:45:43 64263 seconds since last log event
+09/10/25 07:45:43 Pending DAG nodes:
+09/10/25 07:45:43   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 07:55:44 64864 seconds since last log event
+09/10/25 07:55:44 Pending DAG nodes:
+09/10/25 07:55:44   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 08:00:04 Total jobs placed to AP: 2
+09/10/25 08:00:04      Idle     Held     Running     Successful     Failed
+09/10/25 08:00:04       ===      ===         ===            ===        ===
+09/10/25 08:00:04         0        0           1              1          0
+09/10/25 08:05:45 65465 seconds since last log event
+09/10/25 08:05:45 Pending DAG nodes:
+09/10/25 08:05:45   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 08:15:05 Total jobs placed to AP: 2
+09/10/25 08:15:05      Idle     Held     Running     Successful     Failed
+09/10/25 08:15:05       ===      ===         ===            ===        ===
+09/10/25 08:15:05         0        0           1              1          0
+09/10/25 08:15:45 66065 seconds since last log event
+09/10/25 08:15:45 Pending DAG nodes:
+09/10/25 08:15:45   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 08:25:46 66666 seconds since last log event
+09/10/25 08:25:46 Pending DAG nodes:
+09/10/25 08:25:46   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 08:30:06 Total jobs placed to AP: 2
+09/10/25 08:30:06      Idle     Held     Running     Successful     Failed
+09/10/25 08:30:06       ===      ===         ===            ===        ===
+09/10/25 08:30:06         0        0           1              1          0
+09/10/25 08:35:46 67266 seconds since last log event
+09/10/25 08:35:46 Pending DAG nodes:
+09/10/25 08:35:46   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 08:45:07 Total jobs placed to AP: 2
+09/10/25 08:45:07      Idle     Held     Running     Successful     Failed
+09/10/25 08:45:07       ===      ===         ===            ===        ===
+09/10/25 08:45:07         0        0           1              1          0
+09/10/25 08:45:47 67867 seconds since last log event
+09/10/25 08:45:47 Pending DAG nodes:
+09/10/25 08:45:47   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 08:55:48 68468 seconds since last log event
+09/10/25 08:55:48 Pending DAG nodes:
+09/10/25 08:55:48   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 09:00:08 Total jobs placed to AP: 2
+09/10/25 09:00:08      Idle     Held     Running     Successful     Failed
+09/10/25 09:00:08       ===      ===         ===            ===        ===
+09/10/25 09:00:08         0        0           1              1          0
+09/10/25 09:05:48 69068 seconds since last log event
+09/10/25 09:05:48 Pending DAG nodes:
+09/10/25 09:05:48   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 09:15:09 Total jobs placed to AP: 2
+09/10/25 09:15:09      Idle     Held     Running     Successful     Failed
+09/10/25 09:15:09       ===      ===         ===            ===        ===
+09/10/25 09:15:09         0        0           1              1          0
+09/10/25 09:15:49 69669 seconds since last log event
+09/10/25 09:15:49 Pending DAG nodes:
+09/10/25 09:15:49   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 09:25:50 70270 seconds since last log event
+09/10/25 09:25:50 Pending DAG nodes:
+09/10/25 09:25:50   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 09:30:10 Total jobs placed to AP: 2
+09/10/25 09:30:10      Idle     Held     Running     Successful     Failed
+09/10/25 09:30:10       ===      ===         ===            ===        ===
+09/10/25 09:30:10         0        0           1              1          0
+09/10/25 09:35:50 70870 seconds since last log event
+09/10/25 09:35:50 Pending DAG nodes:
+09/10/25 09:35:50   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 09:45:11 Total jobs placed to AP: 2
+09/10/25 09:45:11      Idle     Held     Running     Successful     Failed
+09/10/25 09:45:11       ===      ===         ===            ===        ===
+09/10/25 09:45:11         0        0           1              1          0
+09/10/25 09:45:51 71471 seconds since last log event
+09/10/25 09:45:51 Pending DAG nodes:
+09/10/25 09:45:51   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 09:55:51 72071 seconds since last log event
+09/10/25 09:55:51 Pending DAG nodes:
+09/10/25 09:55:51   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 10:00:11 Total jobs placed to AP: 2
+09/10/25 10:00:11      Idle     Held     Running     Successful     Failed
+09/10/25 10:00:11       ===      ===         ===            ===        ===
+09/10/25 10:00:11         0        0           1              1          0
+09/10/25 10:05:51 72671 seconds since last log event
+09/10/25 10:05:51 Pending DAG nodes:
+09/10/25 10:05:51   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 10:15:12 Total jobs placed to AP: 2
+09/10/25 10:15:12      Idle     Held     Running     Successful     Failed
+09/10/25 10:15:12       ===      ===         ===            ===        ===
+09/10/25 10:15:12         0        0           1              1          0
+09/10/25 10:15:52 73272 seconds since last log event
+09/10/25 10:15:52 Pending DAG nodes:
+09/10/25 10:15:52   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 10:25:52 73872 seconds since last log event
+09/10/25 10:25:52 Pending DAG nodes:
+09/10/25 10:25:52   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 10:30:13 Total jobs placed to AP: 2
+09/10/25 10:30:13      Idle     Held     Running     Successful     Failed
+09/10/25 10:30:13       ===      ===         ===            ===        ===
+09/10/25 10:30:13         0        0           1              1          0
+09/10/25 10:35:53 74473 seconds since last log event
+09/10/25 10:35:53 Pending DAG nodes:
+09/10/25 10:35:53   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 10:45:14 Total jobs placed to AP: 2
+09/10/25 10:45:14      Idle     Held     Running     Successful     Failed
+09/10/25 10:45:14       ===      ===         ===            ===        ===
+09/10/25 10:45:14         0        0           1              1          0
+09/10/25 10:45:54 75074 seconds since last log event
+09/10/25 10:45:54 Pending DAG nodes:
+09/10/25 10:45:54   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 10:55:54 75674 seconds since last log event
+09/10/25 10:55:54 Pending DAG nodes:
+09/10/25 10:55:54   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 11:00:14 Total jobs placed to AP: 2
+09/10/25 11:00:14      Idle     Held     Running     Successful     Failed
+09/10/25 11:00:14       ===      ===         ===            ===        ===
+09/10/25 11:00:14         0        0           1              1          0
+09/10/25 11:05:55 76275 seconds since last log event
+09/10/25 11:05:55 Pending DAG nodes:
+09/10/25 11:05:55   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 11:15:15 Total jobs placed to AP: 2
+09/10/25 11:15:15      Idle     Held     Running     Successful     Failed
+09/10/25 11:15:15       ===      ===         ===            ===        ===
+09/10/25 11:15:15         0        0           1              1          0
+09/10/25 11:15:55 76875 seconds since last log event
+09/10/25 11:15:55 Pending DAG nodes:
+09/10/25 11:15:55   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 11:25:56 77476 seconds since last log event
+09/10/25 11:25:56 Pending DAG nodes:
+09/10/25 11:25:56   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 11:30:16 Total jobs placed to AP: 2
+09/10/25 11:30:16      Idle     Held     Running     Successful     Failed
+09/10/25 11:30:16       ===      ===         ===            ===        ===
+09/10/25 11:30:16         0        0           1              1          0
+09/10/25 11:35:57 78077 seconds since last log event
+09/10/25 11:35:57 Pending DAG nodes:
+09/10/25 11:35:57   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 11:45:17 Total jobs placed to AP: 2
+09/10/25 11:45:17      Idle     Held     Running     Successful     Failed
+09/10/25 11:45:17       ===      ===         ===            ===        ===
+09/10/25 11:45:17         0        0           1              1          0
+09/10/25 11:45:57 78677 seconds since last log event
+09/10/25 11:45:57 Pending DAG nodes:
+09/10/25 11:45:57   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 11:55:58 79278 seconds since last log event
+09/10/25 11:55:58 Pending DAG nodes:
+09/10/25 11:55:58   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 12:00:18 Total jobs placed to AP: 2
+09/10/25 12:00:18      Idle     Held     Running     Successful     Failed
+09/10/25 12:00:18       ===      ===         ===            ===        ===
+09/10/25 12:00:18         0        0           1              1          0
+09/10/25 12:05:59 79879 seconds since last log event
+09/10/25 12:05:59 Pending DAG nodes:
+09/10/25 12:05:59   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 12:15:19 Total jobs placed to AP: 2
+09/10/25 12:15:19      Idle     Held     Running     Successful     Failed
+09/10/25 12:15:19       ===      ===         ===            ===        ===
+09/10/25 12:15:19         0        0           1              1          0
+09/10/25 12:15:59 80479 seconds since last log event
+09/10/25 12:15:59 Pending DAG nodes:
+09/10/25 12:15:59   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 12:26:00 81080 seconds since last log event
+09/10/25 12:26:00 Pending DAG nodes:
+09/10/25 12:26:00   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 12:30:20 Total jobs placed to AP: 2
+09/10/25 12:30:20      Idle     Held     Running     Successful     Failed
+09/10/25 12:30:20       ===      ===         ===            ===        ===
+09/10/25 12:30:20         0        0           1              1          0
+09/10/25 12:36:01 81681 seconds since last log event
+09/10/25 12:36:01 Pending DAG nodes:
+09/10/25 12:36:01   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 12:45:21 Total jobs placed to AP: 2
+09/10/25 12:45:21      Idle     Held     Running     Successful     Failed
+09/10/25 12:45:21       ===      ===         ===            ===        ===
+09/10/25 12:45:21         0        0           1              1          0
+09/10/25 12:46:01 82281 seconds since last log event
+09/10/25 12:46:01 Pending DAG nodes:
+09/10/25 12:46:01   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 12:56:02 82882 seconds since last log event
+09/10/25 12:56:02 Pending DAG nodes:
+09/10/25 12:56:02   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 13:00:22 Total jobs placed to AP: 2
+09/10/25 13:00:22      Idle     Held     Running     Successful     Failed
+09/10/25 13:00:22       ===      ===         ===            ===        ===
+09/10/25 13:00:22         0        0           1              1          0
+09/10/25 13:06:03 83483 seconds since last log event
+09/10/25 13:06:03 Pending DAG nodes:
+09/10/25 13:06:03   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 13:15:23 Total jobs placed to AP: 2
+09/10/25 13:15:23      Idle     Held     Running     Successful     Failed
+09/10/25 13:15:23       ===      ===         ===            ===        ===
+09/10/25 13:15:23         0        0           1              1          0
+09/10/25 13:16:03 84083 seconds since last log event
+09/10/25 13:16:03 Pending DAG nodes:
+09/10/25 13:16:03   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 13:26:04 84684 seconds since last log event
+09/10/25 13:26:04 Pending DAG nodes:
+09/10/25 13:26:04   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 13:30:24 Total jobs placed to AP: 2
+09/10/25 13:30:24      Idle     Held     Running     Successful     Failed
+09/10/25 13:30:24       ===      ===         ===            ===        ===
+09/10/25 13:30:24         0        0           1              1          0
+09/10/25 13:36:05 85285 seconds since last log event
+09/10/25 13:36:05 Pending DAG nodes:
+09/10/25 13:36:05   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 13:45:25 Total jobs placed to AP: 2
+09/10/25 13:45:25      Idle     Held     Running     Successful     Failed
+09/10/25 13:45:25       ===      ===         ===            ===        ===
+09/10/25 13:45:25         0        0           1              1          0
+09/10/25 13:46:00 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+09/10/25 13:46:00 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+09/10/25 13:46:05 85885 seconds since last log event
+09/10/25 13:46:05 Pending DAG nodes:
+09/10/25 13:46:05   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 13:56:06 86486 seconds since last log event
+09/10/25 13:56:06 Pending DAG nodes:
+09/10/25 13:56:06   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 13:58:06 Currently monitoring 1 HTCondor log file(s)
+09/10/25 13:58:06 Event: ULOG_JOB_EVICTED for HTCondor Node bayeswave.00000 (42368257.0.0) {09/10/25 13:58:04}
+09/10/25 13:58:06 Number of idle job procs: 1
+09/10/25 14:00:26 Total jobs placed to AP: 2
+09/10/25 14:00:26      Idle     Held     Running     Successful     Failed
+09/10/25 14:00:26       ===      ===         ===            ===        ===
+09/10/25 14:00:26         1        0           0              1          0
+09/10/25 14:01:26 Currently monitoring 1 HTCondor log file(s)
+09/10/25 14:01:26 Event: ULOG_EXECUTE for HTCondor Node bayeswave.00000 (42368257.0.0) {09/10/25 14:01:24}
+09/10/25 14:01:26 Number of idle job procs: 0
+09/10/25 14:11:26 600 seconds since last log event
+09/10/25 14:11:26 Pending DAG nodes:
+09/10/25 14:11:26   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 14:15:26 Total jobs placed to AP: 2
+09/10/25 14:15:26      Idle     Held     Running     Successful     Failed
+09/10/25 14:15:26       ===      ===         ===            ===        ===
+09/10/25 14:15:26         0        0           1              1          0
+09/10/25 14:21:26 1200 seconds since last log event
+09/10/25 14:21:26 Pending DAG nodes:
+09/10/25 14:21:26   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 14:30:27 Total jobs placed to AP: 2
+09/10/25 14:30:27      Idle     Held     Running     Successful     Failed
+09/10/25 14:30:27       ===      ===         ===            ===        ===
+09/10/25 14:30:27         0        0           1              1          0
+09/10/25 14:31:27 1801 seconds since last log event
+09/10/25 14:31:27 Pending DAG nodes:
+09/10/25 14:31:27   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 14:41:27 2401 seconds since last log event
+09/10/25 14:41:27 Pending DAG nodes:
+09/10/25 14:41:27   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 14:45:27 Total jobs placed to AP: 2
+09/10/25 14:45:27      Idle     Held     Running     Successful     Failed
+09/10/25 14:45:27       ===      ===         ===            ===        ===
+09/10/25 14:45:27         0        0           1              1          0
+09/10/25 14:51:27 3001 seconds since last log event
+09/10/25 14:51:27 Pending DAG nodes:
+09/10/25 14:51:27   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 15:00:27 Total jobs placed to AP: 2
+09/10/25 15:00:27      Idle     Held     Running     Successful     Failed
+09/10/25 15:00:27       ===      ===         ===            ===        ===
+09/10/25 15:00:27         0        0           1              1          0
+09/10/25 15:01:27 3601 seconds since last log event
+09/10/25 15:01:27 Pending DAG nodes:
+09/10/25 15:01:27   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 15:11:28 4202 seconds since last log event
+09/10/25 15:11:28 Pending DAG nodes:
+09/10/25 15:11:28   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 15:15:28 Total jobs placed to AP: 2
+09/10/25 15:15:28      Idle     Held     Running     Successful     Failed
+09/10/25 15:15:28       ===      ===         ===            ===        ===
+09/10/25 15:15:28         0        0           1              1          0
+09/10/25 15:21:28 4802 seconds since last log event
+09/10/25 15:21:28 Pending DAG nodes:
+09/10/25 15:21:28   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 15:30:28 Total jobs placed to AP: 2
+09/10/25 15:30:28      Idle     Held     Running     Successful     Failed
+09/10/25 15:30:28       ===      ===         ===            ===        ===
+09/10/25 15:30:28         0        0           1              1          0
+09/10/25 15:31:28 5402 seconds since last log event
+09/10/25 15:31:28 Pending DAG nodes:
+09/10/25 15:31:28   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 15:41:28 6002 seconds since last log event
+09/10/25 15:41:28 Pending DAG nodes:
+09/10/25 15:41:28   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 15:45:29 Total jobs placed to AP: 2
+09/10/25 15:45:29      Idle     Held     Running     Successful     Failed
+09/10/25 15:45:29       ===      ===         ===            ===        ===
+09/10/25 15:45:29         0        0           1              1          0
+09/10/25 15:50:49 Currently monitoring 1 HTCondor log file(s)
+09/10/25 15:50:49 Event: ULOG_JOB_EVICTED for HTCondor Node bayeswave.00000 (42368257.0.0) {09/10/25 15:50:45}
+09/10/25 15:50:49 Number of idle job procs: 1
+09/10/25 15:52:29 Currently monitoring 1 HTCondor log file(s)
+09/10/25 15:52:29 Event: ULOG_EXECUTE for HTCondor Node bayeswave.00000 (42368257.0.0) {09/10/25 15:52:28}
+09/10/25 15:52:29 Number of idle job procs: 0
+09/10/25 16:00:30 Total jobs placed to AP: 2
+09/10/25 16:00:30      Idle     Held     Running     Successful     Failed
+09/10/25 16:00:30       ===      ===         ===            ===        ===
+09/10/25 16:00:30         0        0           1              1          0
+09/10/25 16:02:30 601 seconds since last log event
+09/10/25 16:02:30 Pending DAG nodes:
+09/10/25 16:02:30   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 16:12:30 1201 seconds since last log event
+09/10/25 16:12:30 Pending DAG nodes:
+09/10/25 16:12:30   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 16:15:31 Total jobs placed to AP: 2
+09/10/25 16:15:31      Idle     Held     Running     Successful     Failed
+09/10/25 16:15:31       ===      ===         ===            ===        ===
+09/10/25 16:15:31         0        0           1              1          0
+09/10/25 16:22:31 1802 seconds since last log event
+09/10/25 16:22:31 Pending DAG nodes:
+09/10/25 16:22:31   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 16:30:32 Total jobs placed to AP: 2
+09/10/25 16:30:32      Idle     Held     Running     Successful     Failed
+09/10/25 16:30:32       ===      ===         ===            ===        ===
+09/10/25 16:30:32         0        0           1              1          0
+09/10/25 16:32:32 2403 seconds since last log event
+09/10/25 16:32:32 Pending DAG nodes:
+09/10/25 16:32:32   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 16:42:32 3003 seconds since last log event
+09/10/25 16:42:32 Pending DAG nodes:
+09/10/25 16:42:32   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 16:45:32 Total jobs placed to AP: 2
+09/10/25 16:45:32      Idle     Held     Running     Successful     Failed
+09/10/25 16:45:32       ===      ===         ===            ===        ===
+09/10/25 16:45:32         0        0           1              1          0
+09/10/25 16:52:33 3604 seconds since last log event
+09/10/25 16:52:33 Pending DAG nodes:
+09/10/25 16:52:33   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 17:00:33 Total jobs placed to AP: 2
+09/10/25 17:00:33      Idle     Held     Running     Successful     Failed
+09/10/25 17:00:33       ===      ===         ===            ===        ===
+09/10/25 17:00:33         0        0           1              1          0
+09/10/25 17:02:34 4205 seconds since last log event
+09/10/25 17:02:34 Pending DAG nodes:
+09/10/25 17:02:34   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 17:12:34 4805 seconds since last log event
+09/10/25 17:12:34 Pending DAG nodes:
+09/10/25 17:12:34   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 17:15:34 Total jobs placed to AP: 2
+09/10/25 17:15:34      Idle     Held     Running     Successful     Failed
+09/10/25 17:15:34       ===      ===         ===            ===        ===
+09/10/25 17:15:34         0        0           1              1          0
+09/10/25 17:22:35 5406 seconds since last log event
+09/10/25 17:22:35 Pending DAG nodes:
+09/10/25 17:22:35   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 17:30:35 Total jobs placed to AP: 2
+09/10/25 17:30:35      Idle     Held     Running     Successful     Failed
+09/10/25 17:30:35       ===      ===         ===            ===        ===
+09/10/25 17:30:35         0        0           1              1          0
+09/10/25 17:32:35 6006 seconds since last log event
+09/10/25 17:32:35 Pending DAG nodes:
+09/10/25 17:32:35   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 17:42:36 6607 seconds since last log event
+09/10/25 17:42:36 Pending DAG nodes:
+09/10/25 17:42:36   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 17:45:36 Total jobs placed to AP: 2
+09/10/25 17:45:36      Idle     Held     Running     Successful     Failed
+09/10/25 17:45:36       ===      ===         ===            ===        ===
+09/10/25 17:45:36         0        0           1              1          0
+09/10/25 17:52:36 7207 seconds since last log event
+09/10/25 17:52:36 Pending DAG nodes:
+09/10/25 17:52:36   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 18:00:36 Total jobs placed to AP: 2
+09/10/25 18:00:36      Idle     Held     Running     Successful     Failed
+09/10/25 18:00:36       ===      ===         ===            ===        ===
+09/10/25 18:00:36         0        0           1              1          0
+09/10/25 18:02:36 7807 seconds since last log event
+09/10/25 18:02:36 Pending DAG nodes:
+09/10/25 18:02:36   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 18:12:37 8408 seconds since last log event
+09/10/25 18:12:37 Pending DAG nodes:
+09/10/25 18:12:37   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 18:15:37 Total jobs placed to AP: 2
+09/10/25 18:15:37      Idle     Held     Running     Successful     Failed
+09/10/25 18:15:37       ===      ===         ===            ===        ===
+09/10/25 18:15:37         0        0           1              1          0
+09/10/25 18:22:37 9008 seconds since last log event
+09/10/25 18:22:37 Pending DAG nodes:
+09/10/25 18:22:37   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 18:30:38 Total jobs placed to AP: 2
+09/10/25 18:30:38      Idle     Held     Running     Successful     Failed
+09/10/25 18:30:38       ===      ===         ===            ===        ===
+09/10/25 18:30:38         0        0           1              1          0
+09/10/25 18:32:38 9609 seconds since last log event
+09/10/25 18:32:38 Pending DAG nodes:
+09/10/25 18:32:38   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 18:42:39 10210 seconds since last log event
+09/10/25 18:42:39 Pending DAG nodes:
+09/10/25 18:42:39   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 18:45:39 Total jobs placed to AP: 2
+09/10/25 18:45:39      Idle     Held     Running     Successful     Failed
+09/10/25 18:45:39       ===      ===         ===            ===        ===
+09/10/25 18:45:39         0        0           1              1          0
+09/10/25 18:52:39 10810 seconds since last log event
+09/10/25 18:52:39 Pending DAG nodes:
+09/10/25 18:52:39   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 19:00:40 Total jobs placed to AP: 2
+09/10/25 19:00:40      Idle     Held     Running     Successful     Failed
+09/10/25 19:00:40       ===      ===         ===            ===        ===
+09/10/25 19:00:40         0        0           1              1          0
+09/10/25 19:02:40 11411 seconds since last log event
+09/10/25 19:02:40 Pending DAG nodes:
+09/10/25 19:02:40   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 19:12:40 12011 seconds since last log event
+09/10/25 19:12:40 Pending DAG nodes:
+09/10/25 19:12:40   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 19:15:40 Total jobs placed to AP: 2
+09/10/25 19:15:40      Idle     Held     Running     Successful     Failed
+09/10/25 19:15:40       ===      ===         ===            ===        ===
+09/10/25 19:15:40         0        0           1              1          0
+09/10/25 19:22:40 12611 seconds since last log event
+09/10/25 19:22:40 Pending DAG nodes:
+09/10/25 19:22:40   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 19:30:40 Total jobs placed to AP: 2
+09/10/25 19:30:40      Idle     Held     Running     Successful     Failed
+09/10/25 19:30:40       ===      ===         ===            ===        ===
+09/10/25 19:30:40         0        0           1              1          0
+09/10/25 19:32:40 13211 seconds since last log event
+09/10/25 19:32:40 Pending DAG nodes:
+09/10/25 19:32:40   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 19:42:41 13812 seconds since last log event
+09/10/25 19:42:41 Pending DAG nodes:
+09/10/25 19:42:41   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 19:45:41 Total jobs placed to AP: 2
+09/10/25 19:45:41      Idle     Held     Running     Successful     Failed
+09/10/25 19:45:41       ===      ===         ===            ===        ===
+09/10/25 19:45:41         0        0           1              1          0
+09/10/25 19:52:42 14413 seconds since last log event
+09/10/25 19:52:42 Pending DAG nodes:
+09/10/25 19:52:42   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 20:00:42 Total jobs placed to AP: 2
+09/10/25 20:00:42      Idle     Held     Running     Successful     Failed
+09/10/25 20:00:42       ===      ===         ===            ===        ===
+09/10/25 20:00:42         0        0           1              1          0
+09/10/25 20:02:42 15013 seconds since last log event
+09/10/25 20:02:42 Pending DAG nodes:
+09/10/25 20:02:42   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 20:12:43 15614 seconds since last log event
+09/10/25 20:12:43 Pending DAG nodes:
+09/10/25 20:12:43   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 20:15:43 Total jobs placed to AP: 2
+09/10/25 20:15:43      Idle     Held     Running     Successful     Failed
+09/10/25 20:15:43       ===      ===         ===            ===        ===
+09/10/25 20:15:43         0        0           1              1          0
+09/10/25 20:22:44 16215 seconds since last log event
+09/10/25 20:22:44 Pending DAG nodes:
+09/10/25 20:22:44   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 20:30:44 Total jobs placed to AP: 2
+09/10/25 20:30:44      Idle     Held     Running     Successful     Failed
+09/10/25 20:30:44       ===      ===         ===            ===        ===
+09/10/25 20:30:44         0        0           1              1          0
+09/10/25 20:32:44 16815 seconds since last log event
+09/10/25 20:32:44 Pending DAG nodes:
+09/10/25 20:32:44   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 20:42:45 17416 seconds since last log event
+09/10/25 20:42:45 Pending DAG nodes:
+09/10/25 20:42:45   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 20:45:45 Total jobs placed to AP: 2
+09/10/25 20:45:45      Idle     Held     Running     Successful     Failed
+09/10/25 20:45:45       ===      ===         ===            ===        ===
+09/10/25 20:45:45         0        0           1              1          0
+09/10/25 20:52:45 18016 seconds since last log event
+09/10/25 20:52:45 Pending DAG nodes:
+09/10/25 20:52:45   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 21:00:46 Total jobs placed to AP: 2
+09/10/25 21:00:46      Idle     Held     Running     Successful     Failed
+09/10/25 21:00:46       ===      ===         ===            ===        ===
+09/10/25 21:00:46         0        0           1              1          0
+09/10/25 21:02:46 18617 seconds since last log event
+09/10/25 21:02:46 Pending DAG nodes:
+09/10/25 21:02:46   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 21:12:47 19218 seconds since last log event
+09/10/25 21:12:47 Pending DAG nodes:
+09/10/25 21:12:47   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 21:15:47 Total jobs placed to AP: 2
+09/10/25 21:15:47      Idle     Held     Running     Successful     Failed
+09/10/25 21:15:47       ===      ===         ===            ===        ===
+09/10/25 21:15:47         0        0           1              1          0
+09/10/25 21:22:47 19818 seconds since last log event
+09/10/25 21:22:47 Pending DAG nodes:
+09/10/25 21:22:47   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 21:30:48 Total jobs placed to AP: 2
+09/10/25 21:30:48      Idle     Held     Running     Successful     Failed
+09/10/25 21:30:48       ===      ===         ===            ===        ===
+09/10/25 21:30:48         0        0           1              1          0
+09/10/25 21:32:48 20419 seconds since last log event
+09/10/25 21:32:48 Pending DAG nodes:
+09/10/25 21:32:48   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 21:42:49 21020 seconds since last log event
+09/10/25 21:42:49 Pending DAG nodes:
+09/10/25 21:42:49   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 21:45:49 Total jobs placed to AP: 2
+09/10/25 21:45:49      Idle     Held     Running     Successful     Failed
+09/10/25 21:45:49       ===      ===         ===            ===        ===
+09/10/25 21:45:49         0        0           1              1          0
+09/10/25 21:52:49 21620 seconds since last log event
+09/10/25 21:52:49 Pending DAG nodes:
+09/10/25 21:52:49   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 22:00:50 Total jobs placed to AP: 2
+09/10/25 22:00:50      Idle     Held     Running     Successful     Failed
+09/10/25 22:00:50       ===      ===         ===            ===        ===
+09/10/25 22:00:50         0        0           1              1          0
+09/10/25 22:02:50 22221 seconds since last log event
+09/10/25 22:02:50 Pending DAG nodes:
+09/10/25 22:02:50   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 22:12:50 22821 seconds since last log event
+09/10/25 22:12:50 Pending DAG nodes:
+09/10/25 22:12:50   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 22:15:51 Total jobs placed to AP: 2
+09/10/25 22:15:51      Idle     Held     Running     Successful     Failed
+09/10/25 22:15:51       ===      ===         ===            ===        ===
+09/10/25 22:15:51         0        0           1              1          0
+09/10/25 22:22:51 23422 seconds since last log event
+09/10/25 22:22:51 Pending DAG nodes:
+09/10/25 22:22:51   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 22:30:51 Total jobs placed to AP: 2
+09/10/25 22:30:51      Idle     Held     Running     Successful     Failed
+09/10/25 22:30:51       ===      ===         ===            ===        ===
+09/10/25 22:30:51         0        0           1              1          0
+09/10/25 22:32:52 24023 seconds since last log event
+09/10/25 22:32:52 Pending DAG nodes:
+09/10/25 22:32:52   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 22:42:52 24623 seconds since last log event
+09/10/25 22:42:52 Pending DAG nodes:
+09/10/25 22:42:52   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 22:45:52 Total jobs placed to AP: 2
+09/10/25 22:45:52      Idle     Held     Running     Successful     Failed
+09/10/25 22:45:52       ===      ===         ===            ===        ===
+09/10/25 22:45:52         0        0           1              1          0
+09/10/25 22:52:53 25224 seconds since last log event
+09/10/25 22:52:53 Pending DAG nodes:
+09/10/25 22:52:53   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 23:00:53 Total jobs placed to AP: 2
+09/10/25 23:00:53      Idle     Held     Running     Successful     Failed
+09/10/25 23:00:53       ===      ===         ===            ===        ===
+09/10/25 23:00:53         0        0           1              1          0
+09/10/25 23:02:53 25824 seconds since last log event
+09/10/25 23:02:53 Pending DAG nodes:
+09/10/25 23:02:53   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 23:12:54 26425 seconds since last log event
+09/10/25 23:12:54 Pending DAG nodes:
+09/10/25 23:12:54   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 23:15:54 Total jobs placed to AP: 2
+09/10/25 23:15:54      Idle     Held     Running     Successful     Failed
+09/10/25 23:15:54       ===      ===         ===            ===        ===
+09/10/25 23:15:54         0        0           1              1          0
+09/10/25 23:22:54 27025 seconds since last log event
+09/10/25 23:22:54 Pending DAG nodes:
+09/10/25 23:22:54   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 23:30:55 Total jobs placed to AP: 2
+09/10/25 23:30:55      Idle     Held     Running     Successful     Failed
+09/10/25 23:30:55       ===      ===         ===            ===        ===
+09/10/25 23:30:55         0        0           1              1          0
+09/10/25 23:32:55 27626 seconds since last log event
+09/10/25 23:32:55 Pending DAG nodes:
+09/10/25 23:32:55   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 23:42:56 28227 seconds since last log event
+09/10/25 23:42:56 Pending DAG nodes:
+09/10/25 23:42:56   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 23:45:56 Total jobs placed to AP: 2
+09/10/25 23:45:56      Idle     Held     Running     Successful     Failed
+09/10/25 23:45:56       ===      ===         ===            ===        ===
+09/10/25 23:45:56         0        0           1              1          0
+09/10/25 23:52:56 28827 seconds since last log event
+09/10/25 23:52:56 Pending DAG nodes:
+09/10/25 23:52:56   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/10/25 23:52:56 Querying local schedd for associated jobs in queue
+09/10/25 23:52:56 All pending job states validated
+09/11/25 00:00:57 Total jobs placed to AP: 2
+09/11/25 00:00:57      Idle     Held     Running     Successful     Failed
+09/11/25 00:00:57       ===      ===         ===            ===        ===
+09/11/25 00:00:57         0        0           1              1          0
+09/11/25 00:02:57 29428 seconds since last log event
+09/11/25 00:02:57 Pending DAG nodes:
+09/11/25 00:02:57   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 00:12:57 30028 seconds since last log event
+09/11/25 00:12:57 Pending DAG nodes:
+09/11/25 00:12:57   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 00:15:57 Total jobs placed to AP: 2
+09/11/25 00:15:57      Idle     Held     Running     Successful     Failed
+09/11/25 00:15:57       ===      ===         ===            ===        ===
+09/11/25 00:15:57         0        0           1              1          0
+09/11/25 00:22:57 30628 seconds since last log event
+09/11/25 00:22:57 Pending DAG nodes:
+09/11/25 00:22:57   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 00:30:58 Total jobs placed to AP: 2
+09/11/25 00:30:58      Idle     Held     Running     Successful     Failed
+09/11/25 00:30:58       ===      ===         ===            ===        ===
+09/11/25 00:30:58         0        0           1              1          0
+09/11/25 00:32:58 31229 seconds since last log event
+09/11/25 00:32:58 Pending DAG nodes:
+09/11/25 00:32:58   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 00:42:58 31829 seconds since last log event
+09/11/25 00:42:58 Pending DAG nodes:
+09/11/25 00:42:58   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 00:45:59 Total jobs placed to AP: 2
+09/11/25 00:45:59      Idle     Held     Running     Successful     Failed
+09/11/25 00:45:59       ===      ===         ===            ===        ===
+09/11/25 00:45:59         0        0           1              1          0
+09/11/25 00:52:59 32430 seconds since last log event
+09/11/25 00:52:59 Pending DAG nodes:
+09/11/25 00:52:59   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 01:01:00 Total jobs placed to AP: 2
+09/11/25 01:01:00      Idle     Held     Running     Successful     Failed
+09/11/25 01:01:00       ===      ===         ===            ===        ===
+09/11/25 01:01:00         0        0           1              1          0
+09/11/25 01:03:00 33031 seconds since last log event
+09/11/25 01:03:00 Pending DAG nodes:
+09/11/25 01:03:00   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 01:13:00 33631 seconds since last log event
+09/11/25 01:13:00 Pending DAG nodes:
+09/11/25 01:13:00   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 01:16:01 Total jobs placed to AP: 2
+09/11/25 01:16:01      Idle     Held     Running     Successful     Failed
+09/11/25 01:16:01       ===      ===         ===            ===        ===
+09/11/25 01:16:01         0        0           1              1          0
+09/11/25 01:23:01 34232 seconds since last log event
+09/11/25 01:23:01 Pending DAG nodes:
+09/11/25 01:23:01   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 01:31:02 Total jobs placed to AP: 2
+09/11/25 01:31:02      Idle     Held     Running     Successful     Failed
+09/11/25 01:31:02       ===      ===         ===            ===        ===
+09/11/25 01:31:02         0        0           1              1          0
+09/11/25 01:33:02 34833 seconds since last log event
+09/11/25 01:33:02 Pending DAG nodes:
+09/11/25 01:33:02   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 01:43:02 35433 seconds since last log event
+09/11/25 01:43:02 Pending DAG nodes:
+09/11/25 01:43:02   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 01:46:02 Total jobs placed to AP: 2
+09/11/25 01:46:02      Idle     Held     Running     Successful     Failed
+09/11/25 01:46:02       ===      ===         ===            ===        ===
+09/11/25 01:46:02         0        0           1              1          0
+09/11/25 01:53:03 36034 seconds since last log event
+09/11/25 01:53:03 Pending DAG nodes:
+09/11/25 01:53:03   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 02:01:03 Total jobs placed to AP: 2
+09/11/25 02:01:03      Idle     Held     Running     Successful     Failed
+09/11/25 02:01:03       ===      ===         ===            ===        ===
+09/11/25 02:01:03         0        0           1              1          0
+09/11/25 02:03:03 36634 seconds since last log event
+09/11/25 02:03:03 Pending DAG nodes:
+09/11/25 02:03:04   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 02:13:04 37235 seconds since last log event
+09/11/25 02:13:04 Pending DAG nodes:
+09/11/25 02:13:04   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 02:16:04 Total jobs placed to AP: 2
+09/11/25 02:16:04      Idle     Held     Running     Successful     Failed
+09/11/25 02:16:04       ===      ===         ===            ===        ===
+09/11/25 02:16:04         0        0           1              1          0
+09/11/25 02:23:05 37836 seconds since last log event
+09/11/25 02:23:05 Pending DAG nodes:
+09/11/25 02:23:05   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 02:31:05 Total jobs placed to AP: 2
+09/11/25 02:31:05      Idle     Held     Running     Successful     Failed
+09/11/25 02:31:05       ===      ===         ===            ===        ===
+09/11/25 02:31:05         0        0           1              1          0
+09/11/25 02:33:05 38436 seconds since last log event
+09/11/25 02:33:05 Pending DAG nodes:
+09/11/25 02:33:05   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 02:43:06 39037 seconds since last log event
+09/11/25 02:43:06 Pending DAG nodes:
+09/11/25 02:43:06   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 02:46:06 Total jobs placed to AP: 2
+09/11/25 02:46:06      Idle     Held     Running     Successful     Failed
+09/11/25 02:46:06       ===      ===         ===            ===        ===
+09/11/25 02:46:06         0        0           1              1          0
+09/11/25 02:53:07 39638 seconds since last log event
+09/11/25 02:53:07 Pending DAG nodes:
+09/11/25 02:53:07   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 03:01:07 Total jobs placed to AP: 2
+09/11/25 03:01:07      Idle     Held     Running     Successful     Failed
+09/11/25 03:01:07       ===      ===         ===            ===        ===
+09/11/25 03:01:07         0        0           1              1          0
+09/11/25 03:03:07 40238 seconds since last log event
+09/11/25 03:03:07 Pending DAG nodes:
+09/11/25 03:03:07   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 03:13:08 40839 seconds since last log event
+09/11/25 03:13:08 Pending DAG nodes:
+09/11/25 03:13:08   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 03:16:08 Total jobs placed to AP: 2
+09/11/25 03:16:08      Idle     Held     Running     Successful     Failed
+09/11/25 03:16:08       ===      ===         ===            ===        ===
+09/11/25 03:16:08         0        0           1              1          0
+09/11/25 03:23:08 41439 seconds since last log event
+09/11/25 03:23:08 Pending DAG nodes:
+09/11/25 03:23:08   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 03:31:09 Total jobs placed to AP: 2
+09/11/25 03:31:09      Idle     Held     Running     Successful     Failed
+09/11/25 03:31:09       ===      ===         ===            ===        ===
+09/11/25 03:31:09         0        0           1              1          0
+09/11/25 03:33:09 42040 seconds since last log event
+09/11/25 03:33:09 Pending DAG nodes:
+09/11/25 03:33:09   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 03:43:09 42640 seconds since last log event
+09/11/25 03:43:09 Pending DAG nodes:
+09/11/25 03:43:09   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 03:46:10 Total jobs placed to AP: 2
+09/11/25 03:46:10      Idle     Held     Running     Successful     Failed
+09/11/25 03:46:10       ===      ===         ===            ===        ===
+09/11/25 03:46:10         0        0           1              1          0
+09/11/25 03:53:10 43241 seconds since last log event
+09/11/25 03:53:10 Pending DAG nodes:
+09/11/25 03:53:10   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 04:01:11 Total jobs placed to AP: 2
+09/11/25 04:01:11      Idle     Held     Running     Successful     Failed
+09/11/25 04:01:11       ===      ===         ===            ===        ===
+09/11/25 04:01:11         0        0           1              1          0
+09/11/25 04:03:11 43842 seconds since last log event
+09/11/25 04:03:11 Pending DAG nodes:
+09/11/25 04:03:11   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 04:13:11 44442 seconds since last log event
+09/11/25 04:13:11 Pending DAG nodes:
+09/11/25 04:13:11   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 04:16:12 Total jobs placed to AP: 2
+09/11/25 04:16:12      Idle     Held     Running     Successful     Failed
+09/11/25 04:16:12       ===      ===         ===            ===        ===
+09/11/25 04:16:12         0        0           1              1          0
+09/11/25 04:23:12 45043 seconds since last log event
+09/11/25 04:23:12 Pending DAG nodes:
+09/11/25 04:23:12   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 04:31:12 Total jobs placed to AP: 2
+09/11/25 04:31:12      Idle     Held     Running     Successful     Failed
+09/11/25 04:31:12       ===      ===         ===            ===        ===
+09/11/25 04:31:12         0        0           1              1          0
+09/11/25 04:33:13 45644 seconds since last log event
+09/11/25 04:33:13 Pending DAG nodes:
+09/11/25 04:33:13   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 04:43:13 46244 seconds since last log event
+09/11/25 04:43:13 Pending DAG nodes:
+09/11/25 04:43:13   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 04:46:13 Total jobs placed to AP: 2
+09/11/25 04:46:13      Idle     Held     Running     Successful     Failed
+09/11/25 04:46:13       ===      ===         ===            ===        ===
+09/11/25 04:46:13         0        0           1              1          0
+09/11/25 04:53:14 46845 seconds since last log event
+09/11/25 04:53:14 Pending DAG nodes:
+09/11/25 04:53:14   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 05:01:14 Total jobs placed to AP: 2
+09/11/25 05:01:14      Idle     Held     Running     Successful     Failed
+09/11/25 05:01:14       ===      ===         ===            ===        ===
+09/11/25 05:01:14         0        0           1              1          0
+09/11/25 05:03:14 47445 seconds since last log event
+09/11/25 05:03:14 Pending DAG nodes:
+09/11/25 05:03:14   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 05:13:15 48046 seconds since last log event
+09/11/25 05:13:15 Pending DAG nodes:
+09/11/25 05:13:15   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 05:16:15 Total jobs placed to AP: 2
+09/11/25 05:16:15      Idle     Held     Running     Successful     Failed
+09/11/25 05:16:15       ===      ===         ===            ===        ===
+09/11/25 05:16:15         0        0           1              1          0
+09/11/25 05:23:16 48647 seconds since last log event
+09/11/25 05:23:16 Pending DAG nodes:
+09/11/25 05:23:16   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 05:31:16 Total jobs placed to AP: 2
+09/11/25 05:31:16      Idle     Held     Running     Successful     Failed
+09/11/25 05:31:16       ===      ===         ===            ===        ===
+09/11/25 05:31:16         0        0           1              1          0
+09/11/25 05:33:16 49247 seconds since last log event
+09/11/25 05:33:16 Pending DAG nodes:
+09/11/25 05:33:16   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 05:43:17 49848 seconds since last log event
+09/11/25 05:43:17 Pending DAG nodes:
+09/11/25 05:43:17   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 05:46:17 Total jobs placed to AP: 2
+09/11/25 05:46:17      Idle     Held     Running     Successful     Failed
+09/11/25 05:46:17       ===      ===         ===            ===        ===
+09/11/25 05:46:17         0        0           1              1          0
+09/11/25 05:53:18 50449 seconds since last log event
+09/11/25 05:53:18 Pending DAG nodes:
+09/11/25 05:53:18   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 06:01:18 Total jobs placed to AP: 2
+09/11/25 06:01:18      Idle     Held     Running     Successful     Failed
+09/11/25 06:01:18       ===      ===         ===            ===        ===
+09/11/25 06:01:18         0        0           1              1          0
+09/11/25 06:03:18 51049 seconds since last log event
+09/11/25 06:03:18 Pending DAG nodes:
+09/11/25 06:03:18   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 06:13:19 51650 seconds since last log event
+09/11/25 06:13:19 Pending DAG nodes:
+09/11/25 06:13:19   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 06:16:19 Total jobs placed to AP: 2
+09/11/25 06:16:19      Idle     Held     Running     Successful     Failed
+09/11/25 06:16:19       ===      ===         ===            ===        ===
+09/11/25 06:16:19         0        0           1              1          0
+09/11/25 06:23:19 52250 seconds since last log event
+09/11/25 06:23:19 Pending DAG nodes:
+09/11/25 06:23:19   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 06:31:20 Total jobs placed to AP: 2
+09/11/25 06:31:20      Idle     Held     Running     Successful     Failed
+09/11/25 06:31:20       ===      ===         ===            ===        ===
+09/11/25 06:31:20         0        0           1              1          0
+09/11/25 06:33:20 52851 seconds since last log event
+09/11/25 06:33:20 Pending DAG nodes:
+09/11/25 06:33:20   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 06:43:21 53452 seconds since last log event
+09/11/25 06:43:21 Pending DAG nodes:
+09/11/25 06:43:21   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 06:46:21 Total jobs placed to AP: 2
+09/11/25 06:46:21      Idle     Held     Running     Successful     Failed
+09/11/25 06:46:21       ===      ===         ===            ===        ===
+09/11/25 06:46:21         0        0           1              1          0
+09/11/25 06:53:21 54052 seconds since last log event
+09/11/25 06:53:21 Pending DAG nodes:
+09/11/25 06:53:21   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 07:01:22 Total jobs placed to AP: 2
+09/11/25 07:01:22      Idle     Held     Running     Successful     Failed
+09/11/25 07:01:22       ===      ===         ===            ===        ===
+09/11/25 07:01:22         0        0           1              1          0
+09/11/25 07:03:22 54653 seconds since last log event
+09/11/25 07:03:22 Pending DAG nodes:
+09/11/25 07:03:22   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 07:13:22 55253 seconds since last log event
+09/11/25 07:13:22 Pending DAG nodes:
+09/11/25 07:13:22   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 07:16:22 Total jobs placed to AP: 2
+09/11/25 07:16:22      Idle     Held     Running     Successful     Failed
+09/11/25 07:16:22       ===      ===         ===            ===        ===
+09/11/25 07:16:22         0        0           1              1          0
+09/11/25 07:23:23 55854 seconds since last log event
+09/11/25 07:23:23 Pending DAG nodes:
+09/11/25 07:23:23   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 07:31:23 Total jobs placed to AP: 2
+09/11/25 07:31:23      Idle     Held     Running     Successful     Failed
+09/11/25 07:31:23       ===      ===         ===            ===        ===
+09/11/25 07:31:23         0        0           1              1          0
+09/11/25 07:33:24 56455 seconds since last log event
+09/11/25 07:33:24 Pending DAG nodes:
+09/11/25 07:33:24   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 07:43:24 57055 seconds since last log event
+09/11/25 07:43:24 Pending DAG nodes:
+09/11/25 07:43:24   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 07:46:24 Total jobs placed to AP: 2
+09/11/25 07:46:24      Idle     Held     Running     Successful     Failed
+09/11/25 07:46:24       ===      ===         ===            ===        ===
+09/11/25 07:46:24         0        0           1              1          0
+09/11/25 07:53:25 57656 seconds since last log event
+09/11/25 07:53:25 Pending DAG nodes:
+09/11/25 07:53:25   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 08:01:25 Total jobs placed to AP: 2
+09/11/25 08:01:25      Idle     Held     Running     Successful     Failed
+09/11/25 08:01:25       ===      ===         ===            ===        ===
+09/11/25 08:01:25         0        0           1              1          0
+09/11/25 08:03:25 58256 seconds since last log event
+09/11/25 08:03:25 Pending DAG nodes:
+09/11/25 08:03:25   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 08:13:26 58857 seconds since last log event
+09/11/25 08:13:26 Pending DAG nodes:
+09/11/25 08:13:26   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 08:16:26 Total jobs placed to AP: 2
+09/11/25 08:16:26      Idle     Held     Running     Successful     Failed
+09/11/25 08:16:26       ===      ===         ===            ===        ===
+09/11/25 08:16:26         0        0           1              1          0
+09/11/25 08:23:27 59458 seconds since last log event
+09/11/25 08:23:27 Pending DAG nodes:
+09/11/25 08:23:27   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 08:31:27 Total jobs placed to AP: 2
+09/11/25 08:31:27      Idle     Held     Running     Successful     Failed
+09/11/25 08:31:27       ===      ===         ===            ===        ===
+09/11/25 08:31:27         0        0           1              1          0
+09/11/25 08:33:27 60058 seconds since last log event
+09/11/25 08:33:27 Pending DAG nodes:
+09/11/25 08:33:27   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 08:43:28 60659 seconds since last log event
+09/11/25 08:43:28 Pending DAG nodes:
+09/11/25 08:43:28   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 08:46:28 Total jobs placed to AP: 2
+09/11/25 08:46:28      Idle     Held     Running     Successful     Failed
+09/11/25 08:46:28       ===      ===         ===            ===        ===
+09/11/25 08:46:28         0        0           1              1          0
+09/11/25 08:53:28 61259 seconds since last log event
+09/11/25 08:53:28 Pending DAG nodes:
+09/11/25 08:53:28   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 09:01:29 Total jobs placed to AP: 2
+09/11/25 09:01:29      Idle     Held     Running     Successful     Failed
+09/11/25 09:01:29       ===      ===         ===            ===        ===
+09/11/25 09:01:29         0        0           1              1          0
+09/11/25 09:03:29 61860 seconds since last log event
+09/11/25 09:03:29 Pending DAG nodes:
+09/11/25 09:03:29   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 09:13:30 62461 seconds since last log event
+09/11/25 09:13:30 Pending DAG nodes:
+09/11/25 09:13:30   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 09:16:30 Total jobs placed to AP: 2
+09/11/25 09:16:30      Idle     Held     Running     Successful     Failed
+09/11/25 09:16:30       ===      ===         ===            ===        ===
+09/11/25 09:16:30         0        0           1              1          0
+09/11/25 09:23:30 63061 seconds since last log event
+09/11/25 09:23:30 Pending DAG nodes:
+09/11/25 09:23:30   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 09:31:31 Total jobs placed to AP: 2
+09/11/25 09:31:31      Idle     Held     Running     Successful     Failed
+09/11/25 09:31:31       ===      ===         ===            ===        ===
+09/11/25 09:31:31         0        0           1              1          0
+09/11/25 09:33:31 63662 seconds since last log event
+09/11/25 09:33:31 Pending DAG nodes:
+09/11/25 09:33:31   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 09:43:32 64263 seconds since last log event
+09/11/25 09:43:32 Pending DAG nodes:
+09/11/25 09:43:32   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 09:46:32 Total jobs placed to AP: 2
+09/11/25 09:46:32      Idle     Held     Running     Successful     Failed
+09/11/25 09:46:32       ===      ===         ===            ===        ===
+09/11/25 09:46:32         0        0           1              1          0
+09/11/25 09:53:32 64863 seconds since last log event
+09/11/25 09:53:32 Pending DAG nodes:
+09/11/25 09:53:32   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 10:01:33 Total jobs placed to AP: 2
+09/11/25 10:01:33      Idle     Held     Running     Successful     Failed
+09/11/25 10:01:33       ===      ===         ===            ===        ===
+09/11/25 10:01:33         0        0           1              1          0
+09/11/25 10:03:33 65464 seconds since last log event
+09/11/25 10:03:33 Pending DAG nodes:
+09/11/25 10:03:33   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 10:13:34 66065 seconds since last log event
+09/11/25 10:13:34 Pending DAG nodes:
+09/11/25 10:13:34   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 10:16:34 Total jobs placed to AP: 2
+09/11/25 10:16:34      Idle     Held     Running     Successful     Failed
+09/11/25 10:16:34       ===      ===         ===            ===        ===
+09/11/25 10:16:34         0        0           1              1          0
+09/11/25 10:23:34 66665 seconds since last log event
+09/11/25 10:23:34 Pending DAG nodes:
+09/11/25 10:23:34   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 10:31:35 Total jobs placed to AP: 2
+09/11/25 10:31:35      Idle     Held     Running     Successful     Failed
+09/11/25 10:31:35       ===      ===         ===            ===        ===
+09/11/25 10:31:35         0        0           1              1          0
+09/11/25 10:33:35 67266 seconds since last log event
+09/11/25 10:33:35 Pending DAG nodes:
+09/11/25 10:33:35   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 10:43:36 67867 seconds since last log event
+09/11/25 10:43:36 Pending DAG nodes:
+09/11/25 10:43:36   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 10:46:36 Total jobs placed to AP: 2
+09/11/25 10:46:36      Idle     Held     Running     Successful     Failed
+09/11/25 10:46:36       ===      ===         ===            ===        ===
+09/11/25 10:46:36         0        0           1              1          0
+09/11/25 10:53:36 68467 seconds since last log event
+09/11/25 10:53:36 Pending DAG nodes:
+09/11/25 10:53:36   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 11:01:37 Total jobs placed to AP: 2
+09/11/25 11:01:37      Idle     Held     Running     Successful     Failed
+09/11/25 11:01:37       ===      ===         ===            ===        ===
+09/11/25 11:01:37         0        0           1              1          0
+09/11/25 11:03:37 69068 seconds since last log event
+09/11/25 11:03:37 Pending DAG nodes:
+09/11/25 11:03:37   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 11:13:38 69669 seconds since last log event
+09/11/25 11:13:38 Pending DAG nodes:
+09/11/25 11:13:38   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 11:16:38 Total jobs placed to AP: 2
+09/11/25 11:16:38      Idle     Held     Running     Successful     Failed
+09/11/25 11:16:38       ===      ===         ===            ===        ===
+09/11/25 11:16:38         0        0           1              1          0
+09/11/25 11:23:38 70269 seconds since last log event
+09/11/25 11:23:38 Pending DAG nodes:
+09/11/25 11:23:38   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 11:31:39 Total jobs placed to AP: 2
+09/11/25 11:31:39      Idle     Held     Running     Successful     Failed
+09/11/25 11:31:39       ===      ===         ===            ===        ===
+09/11/25 11:31:39         0        0           1              1          0
+09/11/25 11:33:39 70870 seconds since last log event
+09/11/25 11:33:39 Pending DAG nodes:
+09/11/25 11:33:39   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 11:43:40 71471 seconds since last log event
+09/11/25 11:43:40 Pending DAG nodes:
+09/11/25 11:43:40   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 11:46:40 Total jobs placed to AP: 2
+09/11/25 11:46:40      Idle     Held     Running     Successful     Failed
+09/11/25 11:46:40       ===      ===         ===            ===        ===
+09/11/25 11:46:40         0        0           1              1          0
+09/11/25 11:53:40 72071 seconds since last log event
+09/11/25 11:53:40 Pending DAG nodes:
+09/11/25 11:53:40   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 12:01:41 Total jobs placed to AP: 2
+09/11/25 12:01:41      Idle     Held     Running     Successful     Failed
+09/11/25 12:01:41       ===      ===         ===            ===        ===
+09/11/25 12:01:41         0        0           1              1          0
+09/11/25 12:03:41 72672 seconds since last log event
+09/11/25 12:03:41 Pending DAG nodes:
+09/11/25 12:03:41   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 12:13:42 73273 seconds since last log event
+09/11/25 12:13:42 Pending DAG nodes:
+09/11/25 12:13:42   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 12:16:42 Total jobs placed to AP: 2
+09/11/25 12:16:42      Idle     Held     Running     Successful     Failed
+09/11/25 12:16:42       ===      ===         ===            ===        ===
+09/11/25 12:16:42         0        0           1              1          0
+09/11/25 12:23:43 73874 seconds since last log event
+09/11/25 12:23:43 Pending DAG nodes:
+09/11/25 12:23:43   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 12:31:43 Total jobs placed to AP: 2
+09/11/25 12:31:43      Idle     Held     Running     Successful     Failed
+09/11/25 12:31:43       ===      ===         ===            ===        ===
+09/11/25 12:31:43         0        0           1              1          0
+09/11/25 12:33:43 74474 seconds since last log event
+09/11/25 12:33:43 Pending DAG nodes:
+09/11/25 12:33:43   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 12:43:44 75075 seconds since last log event
+09/11/25 12:43:44 Pending DAG nodes:
+09/11/25 12:43:44   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 12:46:44 Total jobs placed to AP: 2
+09/11/25 12:46:44      Idle     Held     Running     Successful     Failed
+09/11/25 12:46:44       ===      ===         ===            ===        ===
+09/11/25 12:46:44         0        0           1              1          0
+09/11/25 12:53:44 75675 seconds since last log event
+09/11/25 12:53:44 Pending DAG nodes:
+09/11/25 12:53:44   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 13:01:45 Total jobs placed to AP: 2
+09/11/25 13:01:45      Idle     Held     Running     Successful     Failed
+09/11/25 13:01:45       ===      ===         ===            ===        ===
+09/11/25 13:01:45         0        0           1              1          0
+09/11/25 13:03:45 76276 seconds since last log event
+09/11/25 13:03:45 Pending DAG nodes:
+09/11/25 13:03:45   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 13:13:46 76877 seconds since last log event
+09/11/25 13:13:46 Pending DAG nodes:
+09/11/25 13:13:46   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 13:16:46 Total jobs placed to AP: 2
+09/11/25 13:16:46      Idle     Held     Running     Successful     Failed
+09/11/25 13:16:46       ===      ===         ===            ===        ===
+09/11/25 13:16:46         0        0           1              1          0
+09/11/25 13:23:46 77477 seconds since last log event
+09/11/25 13:23:46 Pending DAG nodes:
+09/11/25 13:23:46   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 13:31:47 Total jobs placed to AP: 2
+09/11/25 13:31:47      Idle     Held     Running     Successful     Failed
+09/11/25 13:31:47       ===      ===         ===            ===        ===
+09/11/25 13:31:47         0        0           1              1          0
+09/11/25 13:33:47 78078 seconds since last log event
+09/11/25 13:33:47 Pending DAG nodes:
+09/11/25 13:33:47   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 13:43:48 78679 seconds since last log event
+09/11/25 13:43:48 Pending DAG nodes:
+09/11/25 13:43:48   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 13:46:48 Total jobs placed to AP: 2
+09/11/25 13:46:48      Idle     Held     Running     Successful     Failed
+09/11/25 13:46:48       ===      ===         ===            ===        ===
+09/11/25 13:46:48         0        0           1              1          0
+09/11/25 13:47:58 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+09/11/25 13:47:58 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+09/11/25 13:53:48 79279 seconds since last log event
+09/11/25 13:53:48 Pending DAG nodes:
+09/11/25 13:53:48   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 14:01:49 Total jobs placed to AP: 2
+09/11/25 14:01:49      Idle     Held     Running     Successful     Failed
+09/11/25 14:01:49       ===      ===         ===            ===        ===
+09/11/25 14:01:49         0        0           1              1          0
+09/11/25 14:03:49 79880 seconds since last log event
+09/11/25 14:03:49 Pending DAG nodes:
+09/11/25 14:03:49   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 14:13:50 80481 seconds since last log event
+09/11/25 14:13:50 Pending DAG nodes:
+09/11/25 14:13:50   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 14:16:50 Total jobs placed to AP: 2
+09/11/25 14:16:50      Idle     Held     Running     Successful     Failed
+09/11/25 14:16:50       ===      ===         ===            ===        ===
+09/11/25 14:16:50         0        0           1              1          0
+09/11/25 14:23:50 81081 seconds since last log event
+09/11/25 14:23:50 Pending DAG nodes:
+09/11/25 14:23:50   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 14:31:51 Total jobs placed to AP: 2
+09/11/25 14:31:51      Idle     Held     Running     Successful     Failed
+09/11/25 14:31:51       ===      ===         ===            ===        ===
+09/11/25 14:31:51         0        0           1              1          0
+09/11/25 14:33:51 81682 seconds since last log event
+09/11/25 14:33:51 Pending DAG nodes:
+09/11/25 14:33:51   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 14:43:52 82283 seconds since last log event
+09/11/25 14:43:52 Pending DAG nodes:
+09/11/25 14:43:52   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 14:46:52 Total jobs placed to AP: 2
+09/11/25 14:46:52      Idle     Held     Running     Successful     Failed
+09/11/25 14:46:52       ===      ===         ===            ===        ===
+09/11/25 14:46:52         0        0           1              1          0
+09/11/25 14:53:52 82883 seconds since last log event
+09/11/25 14:53:52 Pending DAG nodes:
+09/11/25 14:53:52   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 15:01:53 Total jobs placed to AP: 2
+09/11/25 15:01:53      Idle     Held     Running     Successful     Failed
+09/11/25 15:01:53       ===      ===         ===            ===        ===
+09/11/25 15:01:53         0        0           1              1          0
+09/11/25 15:03:53 83484 seconds since last log event
+09/11/25 15:03:53 Pending DAG nodes:
+09/11/25 15:03:53   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 15:13:53 84084 seconds since last log event
+09/11/25 15:13:53 Pending DAG nodes:
+09/11/25 15:13:53   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 15:16:53 Total jobs placed to AP: 2
+09/11/25 15:16:53      Idle     Held     Running     Successful     Failed
+09/11/25 15:16:53       ===      ===         ===            ===        ===
+09/11/25 15:16:53         0        0           1              1          0
+09/11/25 15:23:53 84684 seconds since last log event
+09/11/25 15:23:53 Pending DAG nodes:
+09/11/25 15:23:53   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 15:31:54 Total jobs placed to AP: 2
+09/11/25 15:31:54      Idle     Held     Running     Successful     Failed
+09/11/25 15:31:54       ===      ===         ===            ===        ===
+09/11/25 15:31:54         0        0           1              1          0
+09/11/25 15:33:54 85285 seconds since last log event
+09/11/25 15:33:54 Pending DAG nodes:
+09/11/25 15:33:54   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 15:43:54 85885 seconds since last log event
+09/11/25 15:43:54 Pending DAG nodes:
+09/11/25 15:43:54   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 15:46:55 Total jobs placed to AP: 2
+09/11/25 15:46:55      Idle     Held     Running     Successful     Failed
+09/11/25 15:46:55       ===      ===         ===            ===        ===
+09/11/25 15:46:55         0        0           1              1          0
+09/11/25 15:53:55 86486 seconds since last log event
+09/11/25 15:53:55 Pending DAG nodes:
+09/11/25 15:53:55   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 16:01:55 Total jobs placed to AP: 2
+09/11/25 16:01:55      Idle     Held     Running     Successful     Failed
+09/11/25 16:01:55       ===      ===         ===            ===        ===
+09/11/25 16:01:55         0        0           1              1          0
+09/11/25 16:03:56 87087 seconds since last log event
+09/11/25 16:03:56 Pending DAG nodes:
+09/11/25 16:03:56   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 16:13:56 87687 seconds since last log event
+09/11/25 16:13:56 Pending DAG nodes:
+09/11/25 16:13:56   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 16:16:56 Total jobs placed to AP: 2
+09/11/25 16:16:56      Idle     Held     Running     Successful     Failed
+09/11/25 16:16:56       ===      ===         ===            ===        ===
+09/11/25 16:16:56         0        0           1              1          0
+09/11/25 16:23:57 88288 seconds since last log event
+09/11/25 16:23:57 Pending DAG nodes:
+09/11/25 16:23:57   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 16:31:57 Total jobs placed to AP: 2
+09/11/25 16:31:57      Idle     Held     Running     Successful     Failed
+09/11/25 16:31:57       ===      ===         ===            ===        ===
+09/11/25 16:31:57         0        0           1              1          0
+09/11/25 16:33:57 88888 seconds since last log event
+09/11/25 16:33:57 Pending DAG nodes:
+09/11/25 16:33:57   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 16:43:58 89489 seconds since last log event
+09/11/25 16:43:58 Pending DAG nodes:
+09/11/25 16:43:58   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 16:46:58 Total jobs placed to AP: 2
+09/11/25 16:46:58      Idle     Held     Running     Successful     Failed
+09/11/25 16:46:58       ===      ===         ===            ===        ===
+09/11/25 16:46:58         0        0           1              1          0
+09/11/25 16:53:59 90090 seconds since last log event
+09/11/25 16:53:59 Pending DAG nodes:
+09/11/25 16:53:59   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 17:01:59 Total jobs placed to AP: 2
+09/11/25 17:01:59      Idle     Held     Running     Successful     Failed
+09/11/25 17:01:59       ===      ===         ===            ===        ===
+09/11/25 17:01:59         0        0           1              1          0
+09/11/25 17:03:59 90690 seconds since last log event
+09/11/25 17:03:59 Pending DAG nodes:
+09/11/25 17:03:59   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 17:13:59 91290 seconds since last log event
+09/11/25 17:13:59 Pending DAG nodes:
+09/11/25 17:13:59   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 17:16:59 Total jobs placed to AP: 2
+09/11/25 17:16:59      Idle     Held     Running     Successful     Failed
+09/11/25 17:16:59       ===      ===         ===            ===        ===
+09/11/25 17:16:59         0        0           1              1          0
+09/11/25 17:24:00 91891 seconds since last log event
+09/11/25 17:24:00 Pending DAG nodes:
+09/11/25 17:24:00   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 17:32:00 Total jobs placed to AP: 2
+09/11/25 17:32:00      Idle     Held     Running     Successful     Failed
+09/11/25 17:32:00       ===      ===         ===            ===        ===
+09/11/25 17:32:00         0        0           1              1          0
+09/11/25 17:33:45 Currently monitoring 1 HTCondor log file(s)
+09/11/25 17:33:45 Event: ULOG_JOB_EVICTED for HTCondor Node bayeswave.00000 (42368257.0.0) {09/11/25 17:33:42}
+09/11/25 17:33:45 Number of idle job procs: 1
+09/11/25 17:35:50 Currently monitoring 1 HTCondor log file(s)
+09/11/25 17:35:50 Event: ULOG_EXECUTE for HTCondor Node bayeswave.00000 (42368257.0.0) {09/11/25 17:35:46}
+09/11/25 17:35:50 Number of idle job procs: 0
+09/11/25 17:45:51 601 seconds since last log event
+09/11/25 17:45:51 Pending DAG nodes:
+09/11/25 17:45:51   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 17:47:01 Total jobs placed to AP: 2
+09/11/25 17:47:01      Idle     Held     Running     Successful     Failed
+09/11/25 17:47:01       ===      ===         ===            ===        ===
+09/11/25 17:47:01         0        0           1              1          0
+09/11/25 17:55:51 1201 seconds since last log event
+09/11/25 17:55:51 Pending DAG nodes:
+09/11/25 17:55:51   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 18:02:02 Total jobs placed to AP: 2
+09/11/25 18:02:02      Idle     Held     Running     Successful     Failed
+09/11/25 18:02:02       ===      ===         ===            ===        ===
+09/11/25 18:02:02         0        0           1              1          0
+09/11/25 18:05:52 1802 seconds since last log event
+09/11/25 18:05:52 Pending DAG nodes:
+09/11/25 18:05:52   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 18:15:53 2403 seconds since last log event
+09/11/25 18:15:53 Pending DAG nodes:
+09/11/25 18:15:53   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 18:17:03 Total jobs placed to AP: 2
+09/11/25 18:17:03      Idle     Held     Running     Successful     Failed
+09/11/25 18:17:03       ===      ===         ===            ===        ===
+09/11/25 18:17:03         0        0           1              1          0
+09/11/25 18:25:54 3004 seconds since last log event
+09/11/25 18:25:54 Pending DAG nodes:
+09/11/25 18:25:54   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 18:32:04 Total jobs placed to AP: 2
+09/11/25 18:32:04      Idle     Held     Running     Successful     Failed
+09/11/25 18:32:04       ===      ===         ===            ===        ===
+09/11/25 18:32:04         0        0           1              1          0
+09/11/25 18:35:54 3604 seconds since last log event
+09/11/25 18:35:54 Pending DAG nodes:
+09/11/25 18:35:54   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 18:45:55 4205 seconds since last log event
+09/11/25 18:45:55 Pending DAG nodes:
+09/11/25 18:45:55   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 18:47:05 Total jobs placed to AP: 2
+09/11/25 18:47:05      Idle     Held     Running     Successful     Failed
+09/11/25 18:47:05       ===      ===         ===            ===        ===
+09/11/25 18:47:05         0        0           1              1          0
+09/11/25 18:55:55 4805 seconds since last log event
+09/11/25 18:55:55 Pending DAG nodes:
+09/11/25 18:55:55   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 19:02:06 Total jobs placed to AP: 2
+09/11/25 19:02:06      Idle     Held     Running     Successful     Failed
+09/11/25 19:02:06       ===      ===         ===            ===        ===
+09/11/25 19:02:06         0        0           1              1          0
+09/11/25 19:05:56 5406 seconds since last log event
+09/11/25 19:05:56 Pending DAG nodes:
+09/11/25 19:05:56   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 19:15:57 6007 seconds since last log event
+09/11/25 19:15:57 Pending DAG nodes:
+09/11/25 19:15:57   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 19:17:07 Total jobs placed to AP: 2
+09/11/25 19:17:07      Idle     Held     Running     Successful     Failed
+09/11/25 19:17:07       ===      ===         ===            ===        ===
+09/11/25 19:17:07         0        0           1              1          0
+09/11/25 19:25:57 6607 seconds since last log event
+09/11/25 19:25:57 Pending DAG nodes:
+09/11/25 19:25:57   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 19:32:08 Total jobs placed to AP: 2
+09/11/25 19:32:08      Idle     Held     Running     Successful     Failed
+09/11/25 19:32:08       ===      ===         ===            ===        ===
+09/11/25 19:32:08         0        0           1              1          0
+09/11/25 19:35:58 7208 seconds since last log event
+09/11/25 19:35:58 Pending DAG nodes:
+09/11/25 19:35:58   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 19:45:59 7809 seconds since last log event
+09/11/25 19:45:59 Pending DAG nodes:
+09/11/25 19:45:59   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 19:47:09 Total jobs placed to AP: 2
+09/11/25 19:47:09      Idle     Held     Running     Successful     Failed
+09/11/25 19:47:09       ===      ===         ===            ===        ===
+09/11/25 19:47:09         0        0           1              1          0
+09/11/25 19:55:59 8409 seconds since last log event
+09/11/25 19:55:59 Pending DAG nodes:
+09/11/25 19:55:59   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 20:02:10 Total jobs placed to AP: 2
+09/11/25 20:02:10      Idle     Held     Running     Successful     Failed
+09/11/25 20:02:10       ===      ===         ===            ===        ===
+09/11/25 20:02:10         0        0           1              1          0
+09/11/25 20:06:00 9010 seconds since last log event
+09/11/25 20:06:00 Pending DAG nodes:
+09/11/25 20:06:00   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 20:16:00 9610 seconds since last log event
+09/11/25 20:16:00 Pending DAG nodes:
+09/11/25 20:16:00   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 20:17:10 Total jobs placed to AP: 2
+09/11/25 20:17:10      Idle     Held     Running     Successful     Failed
+09/11/25 20:17:10       ===      ===         ===            ===        ===
+09/11/25 20:17:10         0        0           1              1          0
+09/11/25 20:26:01 10211 seconds since last log event
+09/11/25 20:26:01 Pending DAG nodes:
+09/11/25 20:26:01   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 20:32:11 Total jobs placed to AP: 2
+09/11/25 20:32:11      Idle     Held     Running     Successful     Failed
+09/11/25 20:32:11       ===      ===         ===            ===        ===
+09/11/25 20:32:11         0        0           1              1          0
+09/11/25 20:36:02 10812 seconds since last log event
+09/11/25 20:36:02 Pending DAG nodes:
+09/11/25 20:36:02   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 20:46:02 11412 seconds since last log event
+09/11/25 20:46:02 Pending DAG nodes:
+09/11/25 20:46:02   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 20:47:12 Total jobs placed to AP: 2
+09/11/25 20:47:12      Idle     Held     Running     Successful     Failed
+09/11/25 20:47:12       ===      ===         ===            ===        ===
+09/11/25 20:47:12         0        0           1              1          0
+09/11/25 20:56:03 12013 seconds since last log event
+09/11/25 20:56:03 Pending DAG nodes:
+09/11/25 20:56:03   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 21:02:13 Total jobs placed to AP: 2
+09/11/25 21:02:13      Idle     Held     Running     Successful     Failed
+09/11/25 21:02:13       ===      ===         ===            ===        ===
+09/11/25 21:02:13         0        0           1              1          0
+09/11/25 21:06:03 12613 seconds since last log event
+09/11/25 21:06:03 Pending DAG nodes:
+09/11/25 21:06:03   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 21:16:04 13214 seconds since last log event
+09/11/25 21:16:04 Pending DAG nodes:
+09/11/25 21:16:04   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 21:17:14 Total jobs placed to AP: 2
+09/11/25 21:17:14      Idle     Held     Running     Successful     Failed
+09/11/25 21:17:14       ===      ===         ===            ===        ===
+09/11/25 21:17:14         0        0           1              1          0
+09/11/25 21:26:05 13815 seconds since last log event
+09/11/25 21:26:05 Pending DAG nodes:
+09/11/25 21:26:05   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 21:32:15 Total jobs placed to AP: 2
+09/11/25 21:32:15      Idle     Held     Running     Successful     Failed
+09/11/25 21:32:15       ===      ===         ===            ===        ===
+09/11/25 21:32:15         0        0           1              1          0
+09/11/25 21:36:05 14415 seconds since last log event
+09/11/25 21:36:05 Pending DAG nodes:
+09/11/25 21:36:05   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 21:46:06 15016 seconds since last log event
+09/11/25 21:46:06 Pending DAG nodes:
+09/11/25 21:46:06   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 21:47:16 Total jobs placed to AP: 2
+09/11/25 21:47:16      Idle     Held     Running     Successful     Failed
+09/11/25 21:47:16       ===      ===         ===            ===        ===
+09/11/25 21:47:16         0        0           1              1          0
+09/11/25 21:56:06 15616 seconds since last log event
+09/11/25 21:56:06 Pending DAG nodes:
+09/11/25 21:56:06   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 22:02:16 Total jobs placed to AP: 2
+09/11/25 22:02:16      Idle     Held     Running     Successful     Failed
+09/11/25 22:02:16       ===      ===         ===            ===        ===
+09/11/25 22:02:16         0        0           1              1          0
+09/11/25 22:06:06 16216 seconds since last log event
+09/11/25 22:06:06 Pending DAG nodes:
+09/11/25 22:06:06   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 22:16:07 16817 seconds since last log event
+09/11/25 22:16:07 Pending DAG nodes:
+09/11/25 22:16:07   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 22:17:17 Total jobs placed to AP: 2
+09/11/25 22:17:17      Idle     Held     Running     Successful     Failed
+09/11/25 22:17:17       ===      ===         ===            ===        ===
+09/11/25 22:17:17         0        0           1              1          0
+09/11/25 22:26:07 17417 seconds since last log event
+09/11/25 22:26:07 Pending DAG nodes:
+09/11/25 22:26:07   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 22:32:18 Total jobs placed to AP: 2
+09/11/25 22:32:18      Idle     Held     Running     Successful     Failed
+09/11/25 22:32:18       ===      ===         ===            ===        ===
+09/11/25 22:32:18         0        0           1              1          0
+09/11/25 22:36:08 18018 seconds since last log event
+09/11/25 22:36:08 Pending DAG nodes:
+09/11/25 22:36:08   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 22:46:08 18618 seconds since last log event
+09/11/25 22:46:08 Pending DAG nodes:
+09/11/25 22:46:08   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 22:47:18 Total jobs placed to AP: 2
+09/11/25 22:47:18      Idle     Held     Running     Successful     Failed
+09/11/25 22:47:18       ===      ===         ===            ===        ===
+09/11/25 22:47:18         0        0           1              1          0
+09/11/25 22:56:09 19219 seconds since last log event
+09/11/25 22:56:09 Pending DAG nodes:
+09/11/25 22:56:09   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 23:02:19 Total jobs placed to AP: 2
+09/11/25 23:02:19      Idle     Held     Running     Successful     Failed
+09/11/25 23:02:19       ===      ===         ===            ===        ===
+09/11/25 23:02:19         0        0           1              1          0
+09/11/25 23:06:09 19819 seconds since last log event
+09/11/25 23:06:09 Pending DAG nodes:
+09/11/25 23:06:09   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 23:16:10 20420 seconds since last log event
+09/11/25 23:16:10 Pending DAG nodes:
+09/11/25 23:16:10   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 23:17:20 Total jobs placed to AP: 2
+09/11/25 23:17:20      Idle     Held     Running     Successful     Failed
+09/11/25 23:17:20       ===      ===         ===            ===        ===
+09/11/25 23:17:20         0        0           1              1          0
+09/11/25 23:26:11 21021 seconds since last log event
+09/11/25 23:26:11 Pending DAG nodes:
+09/11/25 23:26:11   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 23:32:21 Total jobs placed to AP: 2
+09/11/25 23:32:21      Idle     Held     Running     Successful     Failed
+09/11/25 23:32:21       ===      ===         ===            ===        ===
+09/11/25 23:32:21         0        0           1              1          0
+09/11/25 23:36:11 21621 seconds since last log event
+09/11/25 23:36:11 Pending DAG nodes:
+09/11/25 23:36:11   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 23:46:12 22222 seconds since last log event
+09/11/25 23:46:12 Pending DAG nodes:
+09/11/25 23:46:12   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/11/25 23:47:22 Total jobs placed to AP: 2
+09/11/25 23:47:22      Idle     Held     Running     Successful     Failed
+09/11/25 23:47:22       ===      ===         ===            ===        ===
+09/11/25 23:47:22         0        0           1              1          0
+09/11/25 23:56:13 22823 seconds since last log event
+09/11/25 23:56:13 Pending DAG nodes:
+09/11/25 23:56:13   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/12/25 00:02:23 Total jobs placed to AP: 2
+09/12/25 00:02:23      Idle     Held     Running     Successful     Failed
+09/12/25 00:02:23       ===      ===         ===            ===        ===
+09/12/25 00:02:23         0        0           1              1          0
+09/12/25 00:06:13 23423 seconds since last log event
+09/12/25 00:06:13 Pending DAG nodes:
+09/12/25 00:06:13   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/12/25 00:16:14 24024 seconds since last log event
+09/12/25 00:16:14 Pending DAG nodes:
+09/12/25 00:16:14   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/12/25 00:17:24 Total jobs placed to AP: 2
+09/12/25 00:17:24      Idle     Held     Running     Successful     Failed
+09/12/25 00:17:24       ===      ===         ===            ===        ===
+09/12/25 00:17:24         0        0           1              1          0
+09/12/25 00:26:14 24624 seconds since last log event
+09/12/25 00:26:14 Pending DAG nodes:
+09/12/25 00:26:14   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/12/25 00:32:24 Total jobs placed to AP: 2
+09/12/25 00:32:24      Idle     Held     Running     Successful     Failed
+09/12/25 00:32:24       ===      ===         ===            ===        ===
+09/12/25 00:32:24         0        0           1              1          0
+09/12/25 00:36:15 25225 seconds since last log event
+09/12/25 00:36:15 Pending DAG nodes:
+09/12/25 00:36:15   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/12/25 00:46:15 25825 seconds since last log event
+09/12/25 00:46:15 Pending DAG nodes:
+09/12/25 00:46:15   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/12/25 00:47:25 Total jobs placed to AP: 2
+09/12/25 00:47:25      Idle     Held     Running     Successful     Failed
+09/12/25 00:47:25       ===      ===         ===            ===        ===
+09/12/25 00:47:25         0        0           1              1          0
+09/12/25 00:56:16 26426 seconds since last log event
+09/12/25 00:56:16 Pending DAG nodes:
+09/12/25 00:56:16   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/12/25 01:02:26 Total jobs placed to AP: 2
+09/12/25 01:02:26      Idle     Held     Running     Successful     Failed
+09/12/25 01:02:26       ===      ===         ===            ===        ===
+09/12/25 01:02:26         0        0           1              1          0
+09/12/25 01:06:16 27026 seconds since last log event
+09/12/25 01:06:16 Pending DAG nodes:
+09/12/25 01:06:16   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/12/25 01:16:17 27627 seconds since last log event
+09/12/25 01:16:17 Pending DAG nodes:
+09/12/25 01:16:17   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/12/25 01:17:27 Total jobs placed to AP: 2
+09/12/25 01:17:27      Idle     Held     Running     Successful     Failed
+09/12/25 01:17:27       ===      ===         ===            ===        ===
+09/12/25 01:17:27         0        0           1              1          0
+09/12/25 01:26:17 28227 seconds since last log event
+09/12/25 01:26:17 Pending DAG nodes:
+09/12/25 01:26:17   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/12/25 01:32:28 Total jobs placed to AP: 2
+09/12/25 01:32:28      Idle     Held     Running     Successful     Failed
+09/12/25 01:32:28       ===      ===         ===            ===        ===
+09/12/25 01:32:28         0        0           1              1          0
+09/12/25 01:36:18 28828 seconds since last log event
+09/12/25 01:36:18 Pending DAG nodes:
+09/12/25 01:36:18   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/12/25 01:36:18 Querying local schedd for associated jobs in queue
+09/12/25 01:36:18 All pending job states validated
+09/12/25 01:46:19 29429 seconds since last log event
+09/12/25 01:46:19 Pending DAG nodes:
+09/12/25 01:46:19   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/12/25 01:47:29 Total jobs placed to AP: 2
+09/12/25 01:47:29      Idle     Held     Running     Successful     Failed
+09/12/25 01:47:29       ===      ===         ===            ===        ===
+09/12/25 01:47:29         0        0           1              1          0
+09/12/25 01:56:19 30029 seconds since last log event
+09/12/25 01:56:19 Pending DAG nodes:
+09/12/25 01:56:19   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/12/25 02:02:30 Total jobs placed to AP: 2
+09/12/25 02:02:30      Idle     Held     Running     Successful     Failed
+09/12/25 02:02:30       ===      ===         ===            ===        ===
+09/12/25 02:02:30         0        0           1              1          0
+09/12/25 02:06:20 30630 seconds since last log event
+09/12/25 02:06:20 Pending DAG nodes:
+09/12/25 02:06:20   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/12/25 02:16:20 31230 seconds since last log event
+09/12/25 02:16:20 Pending DAG nodes:
+09/12/25 02:16:20   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/12/25 02:17:31 Total jobs placed to AP: 2
+09/12/25 02:17:31      Idle     Held     Running     Successful     Failed
+09/12/25 02:17:31       ===      ===         ===            ===        ===
+09/12/25 02:17:31         0        0           1              1          0
+09/12/25 02:26:21 31831 seconds since last log event
+09/12/25 02:26:21 Pending DAG nodes:
+09/12/25 02:26:21   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/12/25 02:32:31 Total jobs placed to AP: 2
+09/12/25 02:32:31      Idle     Held     Running     Successful     Failed
+09/12/25 02:32:31       ===      ===         ===            ===        ===
+09/12/25 02:32:31         0        0           1              1          0
+09/12/25 02:36:21 32431 seconds since last log event
+09/12/25 02:36:21 Pending DAG nodes:
+09/12/25 02:36:21   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/12/25 02:46:21 33031 seconds since last log event
+09/12/25 02:46:21 Pending DAG nodes:
+09/12/25 02:46:21   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/12/25 02:47:31 Total jobs placed to AP: 2
+09/12/25 02:47:31      Idle     Held     Running     Successful     Failed
+09/12/25 02:47:31       ===      ===         ===            ===        ===
+09/12/25 02:47:31         0        0           1              1          0
+09/12/25 02:56:22 33632 seconds since last log event
+09/12/25 02:56:22 Pending DAG nodes:
+09/12/25 02:56:22   Node bayeswave.00000, HTCondor ID 42368257, status STATUS_SUBMITTED
+09/12/25 03:02:02 Currently monitoring 1 HTCondor log file(s)
+09/12/25 03:02:02 Event: ULOG_JOB_TERMINATED for HTCondor Node bayeswave.00000 (42368257.0.0) {09/12/25 03:01:58}
+09/12/25 03:02:02 Number of idle job procs: 0
+09/12/25 03:02:02 Node bayeswave.00000 job proc (42368257.0.0) completed successfully.
+09/12/25 03:02:02 Node bayeswave.00000 job(s) have exited the queue
+09/12/25 03:02:02 DAG status: 0 (DAG_STATUS_OK)
+09/12/25 03:02:02 Of 3 nodes total:
+09/12/25 03:02:02  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+09/12/25 03:02:02   ===     ===      ===     ===     ===        ===      ===      ===
+09/12/25 03:02:02     2       0        0       0       1          0        0        0
+09/12/25 03:02:02 0 job proc(s) currently held
+09/12/25 03:02:02 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.000; EventCycleTimeMax=0.161; EventCycleTimeMin=0.000; EventCycleTimeStd=0.001; EventCycleTimeSum=6.277; SleepCycleTimeAvg=5.005; SleepCycleTimeMax=8.348; SleepCycleTimeMin=4.002; SleepCycleTimeStd=0.025; SleepCycleTimeSum=220676.625; SubmitCycleTimeAvg=0.000; SubmitCycleTimeMax=0.014; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.000; SubmitCycleTimeSum=0.060; EventCycleTimeCount=44094.000; SleepCycleTimeCount=44094.000; SubmitCycleTimeCount=44095.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.001; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.021; LogProcessCycleTimeCount=11.000; ]
+09/12/25 03:02:07 Submitting HTCondor Node bayeswave_post.00000 job(s)...
+09/12/25 03:02:07 Submitting node bayeswave_post.00000 from file bayeswave_post.sub using direct job submission
+09/12/25 03:02:07 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+09/12/25 03:02:07 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+09/12/25 03:02:07 CRED: CredD says we have everything: scitokens
+09/12/25 03:02:07 	assigned HTCondor ID (43073533.0.0)
+09/12/25 03:02:07 Just submitted 1 job this cycle...
+09/12/25 03:02:07 DAG status: 0 (DAG_STATUS_OK)
+09/12/25 03:02:07 Of 3 nodes total:
+09/12/25 03:02:07  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+09/12/25 03:02:07   ===     ===      ===     ===     ===        ===      ===      ===
+09/12/25 03:02:07     2       0        1       0       0          0        0        0
+09/12/25 03:02:07 0 job proc(s) currently held
+09/12/25 03:02:07 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.000; EventCycleTimeMax=0.161; EventCycleTimeMin=0.000; EventCycleTimeStd=0.001; EventCycleTimeSum=6.282; SleepCycleTimeAvg=5.005; SleepCycleTimeMax=8.348; SleepCycleTimeMin=4.002; SleepCycleTimeStd=0.025; SleepCycleTimeSum=220681.630; SubmitCycleTimeAvg=0.000; SubmitCycleTimeMax=0.049; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.000; SubmitCycleTimeSum=0.108; EventCycleTimeCount=44095.000; SleepCycleTimeCount=44095.000; SubmitCycleTimeCount=44096.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.001; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.021; LogProcessCycleTimeCount=11.000; ]
+09/12/25 03:02:12 Currently monitoring 1 HTCondor log file(s)
+09/12/25 03:02:12 Reassigning the id of job bayeswave_post.00000 from (43073533.0.0) to (43073533.0.0)
+09/12/25 03:02:12 Event: ULOG_SUBMIT for HTCondor Node bayeswave_post.00000 (43073533.0.0) {09/12/25 03:02:07}
+09/12/25 03:02:12 Number of idle job procs: 1
+09/12/25 03:02:32 Total jobs placed to AP: 3
+09/12/25 03:02:32      Idle     Held     Running     Successful     Failed
+09/12/25 03:02:32       ===      ===         ===            ===        ===
+09/12/25 03:02:32         1        0           0              2          0
+09/12/25 03:03:17 Currently monitoring 1 HTCondor log file(s)
+09/12/25 03:03:17 Event: ULOG_EXECUTE for HTCondor Node bayeswave_post.00000 (43073533.0.0) {09/12/25 03:03:17}
+09/12/25 03:03:17 Number of idle job procs: 0
+09/12/25 03:08:18 Currently monitoring 1 HTCondor log file(s)
+09/12/25 03:08:18 Event: ULOG_JOB_EVICTED for HTCondor Node bayeswave_post.00000 (43073533.0.0) {09/12/25 03:08:17}
+09/12/25 03:08:18 Number of idle job procs: 1
+09/12/25 03:09:33 Currently monitoring 1 HTCondor log file(s)
+09/12/25 03:09:33 Event: ULOG_EXECUTE for HTCondor Node bayeswave_post.00000 (43073533.0.0) {09/12/25 03:09:33}
+09/12/25 03:09:33 Number of idle job procs: 0
+09/12/25 03:12:53 Currently monitoring 1 HTCondor log file(s)
+09/12/25 03:12:53 Event: ULOG_JOB_EVICTED for HTCondor Node bayeswave_post.00000 (43073533.0.0) {09/12/25 03:12:49}
+09/12/25 03:12:53 Number of idle job procs: 1
+09/12/25 03:14:08 Currently monitoring 1 HTCondor log file(s)
+09/12/25 03:14:08 Event: ULOG_EXECUTE for HTCondor Node bayeswave_post.00000 (43073533.0.0) {09/12/25 03:14:06}
+09/12/25 03:14:08 Number of idle job procs: 0
+09/12/25 03:15:08 Currently monitoring 1 HTCondor log file(s)
+09/12/25 03:15:08 Event: ULOG_JOB_TERMINATED for HTCondor Node bayeswave_post.00000 (43073533.0.0) {09/12/25 03:15:07}
+09/12/25 03:15:08 Number of idle job procs: 0
+09/12/25 03:15:08 Node bayeswave_post.00000 job proc (43073533.0.0) failed with signal 11.
+09/12/25 03:15:08 Node bayeswave_post.00000 job(s) have exited the queue
+09/12/25 03:15:08 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+09/12/25 03:15:08 Of 3 nodes total:
+09/12/25 03:15:08  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+09/12/25 03:15:08   ===     ===      ===     ===     ===        ===      ===      ===
+09/12/25 03:15:08     2       0        0       0       0          0        1        0
+09/12/25 03:15:08 0 job proc(s) currently held
+09/12/25 03:15:08 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.000; EventCycleTimeMax=0.161; EventCycleTimeMin=0.000; EventCycleTimeStd=0.001; EventCycleTimeSum=6.357; SleepCycleTimeAvg=5.005; SleepCycleTimeMax=8.348; SleepCycleTimeMin=4.002; SleepCycleTimeStd=0.025; SleepCycleTimeSum=221462.394; SubmitCycleTimeAvg=0.000; SubmitCycleTimeMax=0.049; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.000; SubmitCycleTimeSum=0.109; EventCycleTimeCount=44251.000; SleepCycleTimeCount=44251.000; SubmitCycleTimeCount=44252.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.001; LogProcessCycleTimeStd=0.000; LogProcessCycleTimeSum=0.034; LogProcessCycleTimeCount=18.000; ]
+09/12/25 03:15:08 ERROR: the following job(s) failed:
+09/12/25 03:15:08 ---------------------- Node ----------------------
+09/12/25 03:15:08       Node Name: bayeswave_post.00000
+09/12/25 03:15:08            Noop: false
+09/12/25 03:15:08          NodeID: 1
+09/12/25 03:15:08     Node Status: STATUS_ERROR    
+09/12/25 03:15:08 Node return val: -11
+09/12/25 03:15:08           Error: Job proc (43073533.0.0) failed with signal 11
+09/12/25 03:15:08 Job Submit File: bayeswave_post.sub
+09/12/25 03:15:08  HTCondor Job ID: (43073533.0.0)
+09/12/25 03:15:08 PARENTS: create_data.00000 bayeswave.00000 WAITING: 0 CHILDREN: 
+09/12/25 03:15:08 ---------------------------------------	<END>
+09/12/25 03:15:08 Aborting DAG...
+09/12/25 03:15:08 Writing Rescue DAG to /home/sophie.bini/BW/BW_CPP/glitch_residual/Marginalization_Comparison/Heavy-Moderate/FRAME_INJ/GW190129_CBC_GLITCH_frame_3e6/GW190129_CBC_GLITCH_frame_3e6.dag.rescue001...
+09/12/25 03:15:08 Removing submitted jobs...
+09/12/25 03:15:08 Removing any/all submitted HTCondor jobs...
+09/12/25 03:15:08 Running: /usr/bin/condor_rm -const DAGManJobId==42367150 -reason DAG' 'Abort:' 'DAG' 'is' 'exiting' 'and' 'writing' 'rescue' 'file.
+09/12/25 03:15:08 Note: 0 total node deferrals because of -MaxJobs limit (12000)
+09/12/25 03:15:08 Note: 0 total node deferrals because of -MaxIdle limit (1000)
+09/12/25 03:15:08 Note: 0 total node deferrals because of node category throttles
+09/12/25 03:15:08 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+09/12/25 03:15:08 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+09/12/25 03:15:08 Note: 0 total HOLD script deferrals because of -MaxHold limit (20) or DEFER
+09/12/25 03:15:08 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+09/12/25 03:15:08 Of 3 nodes total:
+09/12/25 03:15:08  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+09/12/25 03:15:08   ===     ===      ===     ===     ===        ===      ===      ===
+09/12/25 03:15:08     2       0        0       0       0          0        1        0
+09/12/25 03:15:08 0 job proc(s) currently held
+09/12/25 03:15:08 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.000; EventCycleTimeMax=0.161; EventCycleTimeMin=0.000; EventCycleTimeStd=0.001; EventCycleTimeSum=6.357; SleepCycleTimeAvg=5.005; SleepCycleTimeMax=8.348; SleepCycleTimeMin=4.002; SleepCycleTimeStd=0.025; SleepCycleTimeSum=221462.394; SubmitCycleTimeAvg=0.000; SubmitCycleTimeMax=0.049; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.000; SubmitCycleTimeSum=0.109; EventCycleTimeCount=44251.000; SleepCycleTimeCount=44251.000; SubmitCycleTimeCount=44252.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.001; LogProcessCycleTimeStd=0.000; LogProcessCycleTimeSum=0.034; LogProcessCycleTimeCount=18.000; ]
+09/12/25 03:15:08 Wrote metrics file /home/sophie.bini/BW/BW_CPP/glitch_residual/Marginalization_Comparison/Heavy-Moderate/FRAME_INJ/GW190129_CBC_GLITCH_frame_3e6/GW190129_CBC_GLITCH_frame_3e6.dag.metrics.
+09/12/25 03:15:08 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.000; EventCycleTimeMax=0.161; EventCycleTimeMin=0.000; EventCycleTimeStd=0.001; EventCycleTimeSum=6.357; SleepCycleTimeAvg=5.005; SleepCycleTimeMax=8.348; SleepCycleTimeMin=4.002; SleepCycleTimeStd=0.025; SleepCycleTimeSum=221462.394; SubmitCycleTimeAvg=0.000; SubmitCycleTimeMax=0.049; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.000; SubmitCycleTimeSum=0.109; EventCycleTimeCount=44251.000; SleepCycleTimeCount=44251.000; SubmitCycleTimeCount=44252.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.001; LogProcessCycleTimeStd=0.000; LogProcessCycleTimeSum=0.034; LogProcessCycleTimeCount=18.000; ]
+09/12/25 03:15:08 **** condor_scheduniv_exec.42367150.0 (condor_DAGMAN) pid 3041784 EXITING WITH STATUS 1

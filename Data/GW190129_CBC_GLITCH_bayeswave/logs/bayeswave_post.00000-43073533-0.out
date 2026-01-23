@@ -1,0 +1,9 @@
+bayeswave.run file not found in run directory, trying to see if it is in 1_main instead
+Creating a modelcollection posterior
+reading in run from output directory bayeswave.run file
+building data
+Reading data from "/var/lib/condor/execute/dir_1268615/cached_data_0/cached_data.json"
+
+building prior manager
+building modelCollectionPointer
+done building modelCollection

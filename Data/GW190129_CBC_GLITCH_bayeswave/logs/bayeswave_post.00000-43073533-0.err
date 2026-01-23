@@ -1,0 +1,13 @@
+/var/lib/condor/execute/dir_1268615/bayeswave_post.py:4: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  __import__('pkg_resources').require('bayeswavecpp-bindings==0.0.dev0')
+Fatal Python error: Illegal instruction
+
+Current thread 0x000014ed7f962740 (most recent call first):
+  File "/home/sophie.bini/BW/BW_CPP/bayeswave-cpp/bayeswavecpp_bindings/model_collection_posterior.py", line 209 in setModelCollectionStateFromIndex
+  File "/home/sophie.bini/BW/BW_CPP/bayeswave-cpp/bayeswavecpp_bindings/model_collection_posterior.py", line 274 in constructTemplateMatrix
+  File "/home/sophie.bini/BW/BW_CPP/bayeswave-cpp/bayeswavecpp_bindings/bayeswave_post_utils.py", line 59 in compute_template_matrices
+  File "/home/sophie.bini/BW/BW_CPP/bayeswave-cpp/bayeswavecpp_bindings/bayeswave_post_utils.py", line 45 in __init__
+  File "/home/sophie.bini/BW/BW_CPP/bayeswave-cpp/bayeswavecpp_bindings/bayeswave_post.py", line 248 in main
+  File "/home/sophie.bini/BW/BW_CPP/bayeswave-cpp/bayeswavecpp_bindings/bayeswave_post.py", line 447 in <module>
+  File "/var/lib/condor/execute/dir_1268615/bayeswave_post.py", line 7 in <module>
+ *** Break *** illegal instruction

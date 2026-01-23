@@ -1,0 +1,24 @@
+universe = vanilla
+executable = /home/sophie.bini/.conda/envs/bayeswave-cpp/bin/bayeswave_post.py
+arguments = $(recompute) $(burn_in) $(run_directory)
+request_memory = 2GB
+request_disk = 1GB
+when_to_transfer_output = ON_EXIT_OR_EVICT
+stream_output = True
+stream_error = True
+success_exit_code = 0
+getenv = True
+log = logs/$(nodename)-$(cluster)-$(process).log
+initialdir = /home/sophie.bini/BW/BW_CPP/glitch_residual/Marginalization_Comparison/Heavy-Moderate/FRAME_INJ/GW190129_CBC_GLITCH_frame_3e6
+notification = ERROR
+accounting_group = ligo.dev.o4.burst.paramest.bayeswave
+accounting_group_user = sophie.bini
+should_transfer_files = YES
+preserve_relative_paths = True
+transfer_input_files = $(input_data_directory),$(input_run_directory)
+transfer_output_files = $(output_bayeswaveOutputDirectory)
+transfer_output_remaps = "$(output_bayeswaveOutputDirectory_remap)"
+output = $(log_dir)/$(nodename)-$(cluster)-$(process).out
+error = $(log_dir)/$(nodename)-$(cluster)-$(process).err
+
+queue

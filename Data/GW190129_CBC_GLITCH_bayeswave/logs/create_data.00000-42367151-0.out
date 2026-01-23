@@ -1,0 +1,20 @@
+
+========= BayesWave Version: ========
+
+Git project remote origin url: https://git.ligo.org/bayeswave/bayeswave-cpp.git
+Git project version: 981be721-dirty
+Git commit hash: 981be721fa840c09429d2ed4b70d948c94f7581c
+Git commit author: sophie.hourihane@ligo.org
+Git commit date: Thu Apr 3 17:35:26 2025 +0000
+
+Set trigtime to 1257296855.0000436306
+Using 0.400000 seconds of padding for IFO H1 
+Using 0.400000 seconds of padding for IFO L1 
+Looking for PSD file /home/rhiannon.udall/BayesianScattering2.0/GW191109/LVK_LHO_PSD.dat for PSD interpolation
+Read 2048 records from /home/rhiannon.udall/BayesianScattering2.0/GW191109/LVK_LHO_PSD.dat
+Looking for PSD file /home/rhiannon.udall/BayesianScattering2.0/GW191109/LVK_LLO_PSD.dat for PSD interpolation
+Read 2048 records from /home/rhiannon.udall/BayesianScattering2.0/GW191109/LVK_LLO_PSD.dat
+
+Exporting data to "/var/lib/condor/execute/dir_424736/cached_data_0/cached_data.json"...
+
+create_data completed successfully.

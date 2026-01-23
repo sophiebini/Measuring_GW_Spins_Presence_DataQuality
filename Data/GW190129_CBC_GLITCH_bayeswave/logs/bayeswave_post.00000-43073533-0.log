@@ -1,0 +1,103 @@
+000 (43073533.000.000) 2025-09-12 03:02:07 Job submitted from host: <10.14.0.121:9618?addrs=10.14.0.121-9618&alias=ldas-pcdev12.ligo.caltech.edu&noUDP&sock=schedd_7366_0ab3>
+    DAG Node: bayeswave_post.00000
+...
+040 (43073533.000.000) 2025-09-12 03:03:16 Started transferring input files
+	Transferring to host: <10.14.8.246:9618?addrs=10.14.8.246-9618&alias=node1996.cluster.ldas.cit&noUDP&sock=slot1_5_981370_b19c_5095>
+...
+040 (43073533.000.000) 2025-09-12 03:03:17 Finished transferring input files
+...
+001 (43073533.000.000) 2025-09-12 03:03:17 Job executing on host: <10.14.8.246:9618?addrs=10.14.8.246-9618&alias=node1996.cluster.ldas.cit&noUDP&sock=startd_981332_b4ef>
+	SlotName: slot1_5@node1996.cluster.ldas.cit
+	CondorScratchDir = "/var/lib/condor/execute/dir_1164159"
+	Cpus = 1
+	Disk = 1049600
+	GPUs = 0
+	Memory = 2048
+...
+006 (43073533.000.000) 2025-09-12 03:03:26 Image size of job updated: 20840
+	21  -  MemoryUsage of job (MB)
+	20840  -  ResidentSetSize of job (KB)
+...
+006 (43073533.000.000) 2025-09-12 03:08:17 Image size of job updated: 1503648
+	21  -  MemoryUsage of job (MB)
+	20840  -  ResidentSetSize of job (KB)
+...
+004 (43073533.000.000) 2025-09-12 03:08:17 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:02:07, Sys 0 00:00:10  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	90284936  -  Run Bytes Received By Job
+	(1) Normal termination (return value 132)
+	The job attribute OnExitRemove expression 'NumJobCompletions > JobMaxRetries || ExitCode =?= JobSuccessExitCode' evaluated to FALSE
+...
+040 (43073533.000.000) 2025-09-12 03:09:32 Started transferring input files
+	Transferring to host: <10.14.4.3:9618?addrs=10.14.4.3-9618&alias=node753.cluster.ldas.cit&noUDP&sock=slot1_5_3173_6a5a_3946>
+...
+040 (43073533.000.000) 2025-09-12 03:09:33 Finished transferring input files
+...
+001 (43073533.000.000) 2025-09-12 03:09:33 Job executing on host: <10.14.4.3:9618?addrs=10.14.4.3-9618&alias=node753.cluster.ldas.cit&noUDP&sock=startd_2631_39c3>
+	SlotName: slot1_5@node753.cluster.ldas.cit
+	CondorScratchDir = "/var/lib/condor/execute/dir_1362327"
+	Cpus = 1
+	Disk = 1049600
+	GPUs = 0
+	Memory = 2048
+...
+006 (43073533.000.000) 2025-09-12 03:09:41 Image size of job updated: 1750000
+	107  -  MemoryUsage of job (MB)
+	109392  -  ResidentSetSize of job (KB)
+...
+006 (43073533.000.000) 2025-09-12 03:12:46 Image size of job updated: 1750000
+	107  -  MemoryUsage of job (MB)
+	109396  -  ResidentSetSize of job (KB)
+...
+004 (43073533.000.000) 2025-09-12 03:12:49 Job was evicted.
+	(0) Job terminated and was requeued
+		Usr 0 00:02:50, Sys 0 00:00:09  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	90284936  -  Run Bytes Received By Job
+	(1) Normal termination (return value 132)
+	The job attribute OnExitRemove expression 'NumJobCompletions > JobMaxRetries || ExitCode =?= JobSuccessExitCode' evaluated to FALSE
+...
+040 (43073533.000.000) 2025-09-12 03:14:06 Started transferring input files
+	Transferring to host: <10.14.10.80:9618?addrs=10.14.10.80-9618&alias=node2330.cluster.ldas.cit&noUDP&sock=slot1_15_3969_44fa_6449>
+...
+040 (43073533.000.000) 2025-09-12 03:14:06 Finished transferring input files
+...
+001 (43073533.000.000) 2025-09-12 03:14:06 Job executing on host: <10.14.10.80:9618?addrs=10.14.10.80-9618&alias=node2330.cluster.ldas.cit&noUDP&sock=startd_3017_fd52>
+	SlotName: slot1_15@node2330.cluster.ldas.cit
+	CondorScratchDir = "/var/lib/condor/execute/dir_1268615"
+	Cpus = 1
+	Disk = 1049600
+	GPUs = 0
+	Memory = 2048
+...
+006 (43073533.000.000) 2025-09-12 03:14:15 Image size of job updated: 1750000
+	314  -  MemoryUsage of job (MB)
+	320820  -  ResidentSetSize of job (KB)
+...
+006 (43073533.000.000) 2025-09-12 03:15:07 Image size of job updated: 1750000
+	314  -  MemoryUsage of job (MB)
+	320908  -  ResidentSetSize of job (KB)
+...
+005 (43073533.000.000) 2025-09-12 03:15:07 Job terminated.
+	(0) Abnormal termination (signal 11)
+	(0) No core file
+		Usr 0 00:00:53, Sys 0 00:00:03  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:05:50, Sys 0 00:00:22  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	90284936  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	270854808  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :   105112  1048576   1049600 
+	   GPUs                 :                           0 
+	   Memory (MB)          :      314     2048      2048 
+	   TimeExecute (s)      :       61                    
+	   TimeSlotBusy (s)     :       62                    
+...

@@ -1,0 +1,78 @@
+Command line: --glitch --glitch-center-gps 1257296854.98 --glitch-window 1 --waveletDmax 10 --gw-cbc --gw-cbc-fref 20 --gw-cbc-start-frequency 0 --gw-cbc-approximant NRSur7dq4 --gw-cbc-center-gps 1257296855.0000437 --gw-cbc-window 0.2 --m1min 20 --m1max 100 --m2min 20 --m2max 100 --extrinsicNcycle 100 --Niter 3000000 --Nchain 20 --Nthread 20 --chainseed 33 --checkpoint --data-directory cached_data_0 --outputDir bayeswave_output_0
+
+========= BayesWave Version: ========
+
+Git project remote origin url: https://git.ligo.org/bayeswave/bayeswave-cpp.git
+Git project version: 981be721-dirty
+Git commit hash: 981be721fa840c09429d2ed4b70d948c94f7581c
+Git commit author: sophie.hourihane@ligo.org
+Git commit date: Thu Apr 3 17:35:26 2025 +0000
+
+
+============ Run Settings ===========
+
+detectors                       H1 L1 
+trigger time (s)                1257296855.000044
+duration of data (s)            4
+sampling rate (Hz)              1024
+number of cycles                30000
+number of chains                20
+temperature ladder              adaptive
+number of adaptive cycles       15000
+number of waveforms printed     0
+
+
+============= Run Flags =============
+
+self-checkpointing is .... ENABLED
+BayesLine PSD model is ... DISABLED
+glitch model is .......... ENABLED
+GWwavelet model is ......  DISABLED
+GWcbc model is ........... ENABLED
+logL=const test is ....... DISABLED
+thermo. integration ...... not supported
+PTMCMC adaptation is ..... ENABLED
+
+
+============= Glitch Model =============
+
+number of iterations per cycle  100
+center of wavelet window (s)    1257296854.98
+duration of wavelet window (s)  1
+min and max number of wavelets  [0, 10]
+min and max f of wavelets (Hz)  [20, 512)
+min and max Q of wavelets       [0.1, 40)
+min and max SNR of wavelets     [0.01, 1000)
+wavelet type is                 SineGaussianWaveletParameters
+polarization is                 elliptical
+prior on wavelet number is      uniform
+prior on wavelet amplitude is   peaking at SNR 5.000000
+wavelet amplitude proposal is   REQUIRED
+rj proposal rate is             0.5
+add wavelet cluster rate is     0.225
+
+============= Gravitational Wave Model =============
+
+
+number of iterations per cycle  100
+fix sky position is             DISABLED
+orientation proposal is         ENABLED
+min and max distance (Mpc)      [1,10000]
+
+
+======== Gravitational Wave Intrinsic CBC Basis ========
+
+number of iterations per cycle   100
+cycle cadence for Fisher updates 100
+center of CBC window (s)         1257296855.000044
+duration of CBC window (s)       0.2
+CBC reference frequency (Hz)     20
+waveform approximant is          NRSur7dq4
+mass 1 prior                     [20, 100]
+mass 2 prior                     [20, 100]
+spins are                        precessing
+spin 1 magnitude prior           [0, 1]
+spin 2 magnitude prior           [0, 1]
+tides are                        DISABLED
+
+

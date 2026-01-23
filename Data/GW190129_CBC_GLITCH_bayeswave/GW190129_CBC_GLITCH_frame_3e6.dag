@@ -1,0 +1,16 @@
+# BEGIN META
+# END META
+# BEGIN NODES AND EDGES
+JOB create_data.00000 create_data.sub
+VARS create_data.00000 nodename="create_data.00000" log_dir="logs" ifo="--ifo H1 --ifo L1" H1_cache="--H1-cache /home/sophie.bini/BW/BW_CPP/glitch_residual/Marginalization_Comparison/Frames/H1_GW191109_GLITCH-INJECTION-FAKE-STRAIN-original_1257296853.cache" L1_cache="--L1-cache /home/sophie.bini/BW/BW_CPP/glitch_residual/Marginalization_Comparison/Frames/L1_GW191109_GLITCH-INJECTION-FAKE-STRAIN-unsubracted_1257296853.cache" H1_channel="--H1-channel H1:GLITCH-INJECTION-FAKE-STRAIN" L1_channel="--L1-channel L1:GLITCH-INJECTION-FAKE-STRAIN" H1_psd="--H1-psd /home/rhiannon.udall/BayesianScattering2.0/GW191109/LVK_LHO_PSD.dat" L1_psd="--L1-psd /home/rhiannon.udall/BayesianScattering2.0/GW191109/LVK_LLO_PSD.dat" dont_dump_extras="--dont-dump-extras " psdlength="--psdlength 4.0" padding="--padding 0.4" H1_flow="--H1-flow 20.0" L1_flow="--L1-flow 20.0" trigtime="--trigtime 1257296855.0000437" segment_start="--segment-start 1257296853" srate="--srate 1024.0" seglen="--seglen 4.0" dataseed="--dataseed 100" L1_timeslide="--L1-timeslide 0.0" overwrite="--overwrite " data_directory="--data-directory cached_data_0" output_data_directory="cached_data_0" output_data_directory_remap=""
+RETRY create_data.00000 0
+PARENT create_data.00000 CHILD bayeswave_post.00000
+PARENT create_data.00000 CHILD bayeswave.00000
+JOB bayeswave_post.00000 bayeswave_post.sub
+VARS bayeswave_post.00000 nodename="bayeswave_post.00000" log_dir="logs" recompute="--recompute " burn_in="--burn_in 100" input_data_directory="cached_data_0" run_directory="--run_directory bayeswave_output_0" input_run_directory="bayeswave_output_0" output_bayeswaveOutputDirectory="bayeswave_output_0" output_bayeswaveOutputDirectory_remap=""
+RETRY bayeswave_post.00000 0
+JOB bayeswave.00000 bayeswave.sub
+VARS bayeswave.00000 nodename="bayeswave.00000" log_dir="logs" glitch="--glitch " glitch_center_gps="--glitch-center-gps 1257296854.98" glitch_window="--glitch-window 1" waveletDmax="--waveletDmax 10" gw_cbc="--gw-cbc " gw_cbc_fref="--gw-cbc-fref 20" gw_cbc_start_frequency="--gw-cbc-start-frequency 0" gw_cbc_approximant="--gw-cbc-approximant NRSur7dq4" gw_cbc_center_gps="--gw-cbc-center-gps 1257296855.0000437" gw_cbc_window="--gw-cbc-window 0.2" m1min="--m1min 20" m1max="--m1max 100" m2min="--m2min 20" m2max="--m2max 100" extrinsicNcycle="--extrinsicNcycle 100" Niter="--Niter 3000000" Nchain="--Nchain 20" Nthread="--Nthread 20" chainseed="--chainseed 33" checkpoint="--checkpoint " data_directory="--data-directory cached_data_0" input_data_directory="cached_data_0" input_outputDir="bayeswave_output_0" outputDir="--outputDir bayeswave_output_0" output_outputDir="bayeswave_output_0" output_outputDir_remap=""
+RETRY bayeswave.00000 0
+PARENT bayeswave.00000 CHILD bayeswave_post.00000
+# END NODES AND EDGES

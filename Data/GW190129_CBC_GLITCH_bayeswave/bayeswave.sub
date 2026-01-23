@@ -1,0 +1,26 @@
+universe = vanilla
+executable = /home/sophie.bini/BW/BW_CPP/bayeswave-cpp/build/src/main
+arguments = $(glitch) $(glitch_center_gps) $(glitch_window) $(waveletDmax) $(gw_cbc) $(gw_cbc_fref) $(gw_cbc_start_frequency) $(gw_cbc_approximant) $(gw_cbc_center_gps) $(gw_cbc_window) $(m1min) $(m1max) $(m2min) $(m2max) $(extrinsicNcycle) $(Niter) $(Nchain) $(Nthread) $(chainseed) $(checkpoint) $(data_directory) $(outputDir)
+checkpoint_exit_code = 77
+request_memory = 3GB
+request_disk = 3GB
+when_to_transfer_output = ON_EXIT_OR_EVICT
+stream_output = True
+stream_error = True
+request_cpus = 20
+success_exit_code = 0
+getenv = True
+log = logs/$(nodename)-$(cluster)-$(process).log
+initialdir = /home/sophie.bini/BW/BW_CPP/glitch_residual/Marginalization_Comparison/Heavy-Moderate/FRAME_INJ/GW190129_CBC_GLITCH_frame_3e6
+notification = ERROR
+accounting_group = ligo.dev.o4.burst.paramest.bayeswave
+accounting_group_user = sophie.bini
+should_transfer_files = YES
+preserve_relative_paths = True
+transfer_input_files = $(input_data_directory),$(input_outputDir)
+transfer_output_files = $(output_outputDir)
+transfer_output_remaps = "$(output_outputDir_remap)"
+output = $(log_dir)/$(nodename)-$(cluster)-$(process).out
+error = $(log_dir)/$(nodename)-$(cluster)-$(process).err
+
+queue
